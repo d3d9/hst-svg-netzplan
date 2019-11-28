@@ -1,0 +1,481 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 2px; */
+}
+
+#mapcontainer {
+    /* border-width: 2px; */
+    /* border-color: darkgray; */
+    /* border-radius: 10px; */
+    /* border-style: solid; */
+    /* padding: 3px; */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#svg2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* cursor: move; */
+    /* ~~todo: grabbing in js~~ */
+}
+
+.leaflet-container {
+    background: #fff;
+}
+
+.leaflet-interactive {
+    cursor: unset;
+}
+
+.transl:not(.stoptext):not(.stop):not(.animate-flicker) {
+    opacity: 0.2 !important;
+}
+
+.transl:not(.stoptext-popup-open).stoptext, .transl:not(.stoptext-popup-open).stoptext > tspan {
+    fill: #bbb !important;
+}
+
+rect.transl.stop, path.transl.stop, g.transl.stop > rect, g.transl.stop > path {
+    stroke: #ccc !important;
+}
+
+g.transl.stop > circle {
+    fill: #bbb !important;
+}
+
+g.transl.stop > g > path {
+    fill: #bbb;
+}
+
+g.transl.stop > g:not(.bficon) {
+    opacity: 0.2 !important;
+}
+
+.stop, .stoptext, .route, .linetext, .lineblob, .infotext {
+    cursor: pointer;
+}
+
+.stoptext-popup-open {
+    fill: darkblue !important;
+    font-weight: bold !important;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 1.5s infinite;
+   -moz-animation: flickerAnimation 1.5s infinite;
+   -o-animation: flickerAnimation 1.5s infinite;
+    animation: flickerAnimation 1.5s infinite;
+}
+
+.stop-backdrop-popup-open {
+    opacity: 1;
+    fill: none;
+    stroke: #56a1ea;
+    stroke-width: 30;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    stroke-opacity: 0.6;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fo-stopinfo-div {
+    border-width: 5px;
+    border-color: darkgray;
+    border-radius: 13px;
+    border-style: solid;
+    padding: 5px;
+    /* padding-bottom: 11px; */
+    font-size: 35px;
+    line-height: normal;
+    background: rgba(240,248,255,0.9);
+    /* height: 95%; */
+    cursor: auto;
+    user-select: text;
+    -ms-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    font-family: 'Fira Sans';
+    animation: fadein 0.3s;
+    -moz-animation: fadein 0.3s;
+    -webkit-animation: fadein 0.3s;
+    -o-animation: fadein 0.3s;
+}
+
+.leaflet-popup-draggable {
+    cursor: move;
+}
+
+.popup-line > .leaflet-popup-content-wrapper {
+    border-width: 4px;
+    border-color: darkgray;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 4px;
+    /* padding-bottom: 11px; */
+    /* font-size: 35px; */
+    /* font-size: x-large; */
+    /* line-height: normal; */
+    background: rgba(240,248,255,0.9);
+    /* font-family: 'Fira Sans'; */
+    /* color: black; */
+}
+
+.popup-line.no-tip > .leaflet-popup-tip-container {
+    display: none;
+}
+
+.popup-line > .leaflet-popup-content-wrapper > .leaflet-popup-content {
+    min-width: 375px;
+    min-height: 100px;
+    font-size: x-large;
+    font-family: 'Fira Sans';
+    line-height: normal;
+    color: black;
+    margin: unset;
+}
+
+.popup-line > a.leaflet-popup-close-button {
+    font-size: xx-large;
+    padding: 13px 16px 0 0;
+    color: black;
+}
+
+.popup-line a:not(.leaflet-popup-close-button) {
+    cursor: pointer;
+}
+
+.bottom-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 18px;
+}
+
+.bottom-icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 1;
+    flex-basis: 25%;
+}
+
+.bottom-icons > * {
+    /* padding: 4px; */
+    /* margin: 2px; */
+    margin-top: 3px;
+    margin-left: 1px;
+    margin-right: 5px;
+    z-index: unset !important;
+    height: 25px; /* vorher mit attribute */
+}
+
+.bottom-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 2;
+}
+
+.bottom-buttons > * {
+    border: 1px solid gray; /* was 1px */
+    border-radius: 7px; /* was 11px */
+    padding: 4px; /* was 6px */
+    margin: 2px;
+    /* font-size: 20px; */
+    font-size: medium;
+    background: rgba(100, 100, 100, 0.11);
+    cursor: pointer;
+    user-select: none;
+}
+
+.linenr-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lineblob-svg {
+    padding: 1.4px; /* was 1.6px */
+    z-index: unset !important;
+}
+
+.lineblob-g {
+    user-select: text !important;
+    /* cursor: pointer; */ /* wird nur bei bedarf gesetzt */
+}
+
+.lineinfo-top-container {
+    background: rgba(50, 50, 50, 0.09);
+    overflow-y: scroll;
+    max-height: 400px;
+}
+
+.lineinfo-container {
+    padding: 5px;
+    font-size: inherit;
+}
+
+.lineinfo-container > br {
+    margin-bottom: 0.5em;
+    content: '';
+    display: block;
+}
+
+.popupheader {
+    font-size: x-large;
+}
+
+.deps-container-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.4fr;
+    grid-template-rows: 35px 1fr; /* war 45px;; 35px wird in js hardcoded verwendet. */
+    /* grid-template-rows: 35px repeat(auto-fill, minmax(10px, 1fr)); */
+    align-items: center;
+    row-gap: 2px; /* war 3px;; wird in js hardcoded verwendet. */
+    column-gap: 6px; /* was 8px */
+    /* grid-auto-rows: 44px; */
+    overflow-y: scroll; /* nicht auto, wegen hoehenermittlung! */
+    /* max-height: 288px; todo: anpassen? wird eh ueberschrieben */
+    /* min-height: min-content; */
+    font-size: large; /* neu */
+    background: rgba(50, 50, 50, 0.09); /* neu */
+}
+
+.deps-container-grid > :not(.deps-headercell) {
+    /* padding-left: 4px; */
+    /* padding-right: 4px; */
+    /* padding-bottom: 10px; */
+}
+
+.deps-headercell {
+    /* font-size: 30px; */
+    font-size: larger;
+    padding: 8px;
+    text-align: center;
+    /* opacity: 0.6; */ /* das macht die reihenfolge kaputt... */
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.deps-nr {
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+    font-size: larger;
+}
+
+.deps-ziel {
+    /* font-size: 25px; */
+    line-height: 1;
+}
+
+.deps-ziel-ausfall {
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+.deps-abfahrt {
+    text-align: center;
+    font-size: x-large; /* neu */
+}
+
+@media (max-width: 530px) {
+    .bottom-icons > * {
+        height: 22px;
+    }
+    
+    .lineinfo-top-container {
+        max-height: 320px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 530px) {
+    .popup-line > .leaflet-popup-content-wrapper > .leaflet-popup-content {
+        min-width: 340px;
+        font-size: large;
+    }
+    
+    .bottom-icons {
+        flex-basis: 20%;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 449px) {
+    .popup-line > .leaflet-popup-content-wrapper > .leaflet-popup-content {
+        min-width: 320px;
+        font-size: large;
+    }
+    
+    .deps-ziel {
+        word-break: break-word;
+    }
+    
+    .bottom-icons {
+        flex-basis: 15%;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 419px) {
+    .popupheader {
+        font-size: large;
+    }
+    
+    .popup-line > a.leaflet-popup-close-button {
+        font-size: x-large;
+        padding: 10px 10px 0 0;
+    }
+    
+    .deps-ziel {
+        word-break: break-word;
+    }
+    
+    .popup-line > .leaflet-popup-content-wrapper > .leaflet-popup-content {
+        min-width: 300px;
+        font-size: large;
+    }
+    
+    .bottom-icons {
+        flex-basis: 15%;
+    }
+}
+
+@media (max-width: 359px) {
+    .popupheader {
+        font-size: large;
+    }
+    
+    .popup-line > a.leaflet-popup-close-button {
+        font-size: x-large;
+        padding: 10px 10px 0 0;
+    }
+    
+    .deps-ziel {
+        font-size: medium;
+        word-break: break-word; /* break-all */
+    }
+    
+    .popup-line > .leaflet-popup-content-wrapper > .leaflet-popup-content {
+        min-width: 270px;
+        max-width: 280px;
+        font-size: large;
+    }
+    
+    .bottom-icons {
+        flex-basis: 15%;
+    }
+}
+
+
+.center-in-deps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  grid-column: 1 / span 3;
+}
+
+.lds-ring {
+  height: 55px; /* was 80px */
+  margin-bottom: 10px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 40px; /* was 51px */
+  height: 40px;
+  margin: 5px; /* was 6px */
+  border: 5px solid #fff; /* was 6px */
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
