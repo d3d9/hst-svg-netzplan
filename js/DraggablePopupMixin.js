@@ -28,6 +28,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /**
  * Makes {@link L.Popup} draggable and proxies all {@link L.Draggable} events.
  * https://raw.githubusercontent.com/Reading-eScience-Centre/leaflet-coverage/master/src/popups/DraggablePopupMixin.js
+ * slightly modified for use in hst-svg-netzplan.
  * 
  * @example
  * let DraggablePopup = DraggablePopupMixin(L.Popup)
@@ -39,7 +40,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 function DraggablePopupMixin (base) {
   return class extends base {
     constructor (options={}, source) {
-      options.className = options.className || 'leaflet-popup-draggable'
+      options.className = options.className ? (options.className + " leaflet-popup-draggable")  : 'leaflet-popup-draggable'
       super(options, source)
     }
     
@@ -47,6 +48,7 @@ function DraggablePopupMixin (base) {
       super.onAdd(map)
       this._draggable = new L.Draggable(this._container, this._wrapper)
       this._draggable.enable()
+      this._draggable.once('drag', e => { this._container.classList.add("no-tip") })
       this._draggable.on('drag', e => {
         // Popup.setContent() resets to the pre-drag position and doesn't use L.DomUtil.setPosition
         // the code below works around that
@@ -59,7 +61,7 @@ function DraggablePopupMixin (base) {
     }
     
     onRemove (map) {
-      this._draggable.disable()
+      if (!!this._draggable) this._draggable.disable()
       super.onRemove(map)
     }
   }

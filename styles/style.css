@@ -6,16 +6,7 @@ html, body {
     box-sizing: border-box;
 }
 
-body {
-    /* padding: 2px; */
-}
-
 #mapcontainer {
-    /* border-width: 2px; */
-    /* border-color: darkgray; */
-    /* border-radius: 10px; */
-    /* border-style: solid; */
-    /* padding: 3px; */
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -26,8 +17,6 @@ body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    /* cursor: move; */
-    /* ~~todo: grabbing in js~~ */
 }
 
 .leaflet-container {
@@ -143,29 +132,6 @@ g.transl.stop > g:not(.bficon) {
     }
 }
 
-.fo-stopinfo-div {
-    border-width: 5px;
-    border-color: darkgray;
-    border-radius: 13px;
-    border-style: solid;
-    padding: 5px;
-    /* padding-bottom: 11px; */
-    font-size: 35px;
-    line-height: normal;
-    background: rgba(240,248,255,0.9);
-    /* height: 95%; */
-    cursor: auto;
-    user-select: text;
-    -ms-user-select: text;
-    -moz-user-select: text;
-    -webkit-user-select: text;
-    font-family: 'Fira Sans';
-    animation: fadein 0.3s;
-    -moz-animation: fadein 0.3s;
-    -webkit-animation: fadein 0.3s;
-    -o-animation: fadein 0.3s;
-}
-
 .leaflet-popup-draggable {
     cursor: move;
 }
@@ -176,13 +142,7 @@ g.transl.stop > g:not(.bficon) {
     border-radius: 10px;
     border-style: solid;
     padding: 4px;
-    /* padding-bottom: 11px; */
-    /* font-size: 35px; */
-    /* font-size: x-large; */
-    /* line-height: normal; */
     background: rgba(240,248,255,0.9);
-    /* font-family: 'Fira Sans'; */
-    /* color: black; */
 }
 
 .popup-line.no-tip > .leaflet-popup-tip-container {
@@ -227,13 +187,11 @@ g.transl.stop > g:not(.bficon) {
 }
 
 .bottom-icons > * {
-    /* padding: 4px; */
-    /* margin: 2px; */
     margin-top: 3px;
     margin-left: 1px;
     margin-right: 5px;
     z-index: unset !important;
-    height: 25px; /* vorher mit attribute */
+    height: 25px; /* hat bei Opera keine Wirkung */
 }
 
 .bottom-buttons {
@@ -245,11 +203,10 @@ g.transl.stop > g:not(.bficon) {
 }
 
 .bottom-buttons > * {
-    border: 1px solid gray; /* was 1px */
-    border-radius: 7px; /* was 11px */
-    padding: 4px; /* was 6px */
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 4px;
     margin: 2px;
-    /* font-size: 20px; */
     font-size: medium;
     background: rgba(100, 100, 100, 0.11);
     cursor: pointer;
@@ -264,13 +221,12 @@ g.transl.stop > g:not(.bficon) {
 }
 
 .lineblob-svg {
-    padding: 1.4px; /* was 1.6px */
+    padding: 1.4px;
     z-index: unset !important;
 }
 
 .lineblob-g {
     user-select: text !important;
-    /* cursor: pointer; */ /* wird nur bei bedarf gesetzt */
 }
 
 .lineinfo-top-container {
@@ -297,31 +253,22 @@ g.transl.stop > g:not(.bficon) {
 .deps-container-grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1.4fr;
-    grid-template-rows: 35px 1fr; /* war 45px;; 35px wird in js hardcoded verwendet. */
+    grid-template-rows: 35px 1fr; /* 35px wird in js hardcoded verwendet. */
     /* grid-template-rows: 35px repeat(auto-fill, minmax(10px, 1fr)); */
     align-items: center;
-    row-gap: 2px; /* war 3px;; wird in js hardcoded verwendet. */
-    column-gap: 6px; /* was 8px */
-    /* grid-auto-rows: 44px; */
-    overflow-y: scroll; /* nicht auto, wegen hoehenermittlung! */
-    /* max-height: 288px; todo: anpassen? wird eh ueberschrieben */
-    /* min-height: min-content; */
-    font-size: large; /* neu */
-    background: rgba(50, 50, 50, 0.09); /* neu */
-}
-
-.deps-container-grid > :not(.deps-headercell) {
-    /* padding-left: 4px; */
-    /* padding-right: 4px; */
-    /* padding-bottom: 10px; */
+    row-gap: 2px; /* wird in js hardcoded verwendet. */
+    column-gap: 6px;
+    overflow-y: scroll;
+    /* max-height: 288px; -- nicht benutzen (crash) */
+    /* min-height: min-content; -- nicht benutzen */
+    font-size: large;
+    background: rgba(50, 50, 50, 0.09);
 }
 
 .deps-headercell {
-    /* font-size: 30px; */
     font-size: larger;
     padding: 8px;
     text-align: center;
-    /* opacity: 0.6; */ /* das macht die reihenfolge kaputt... */
     color: rgba(0, 0, 0, 0.65);
 }
 
@@ -333,7 +280,6 @@ g.transl.stop > g:not(.bficon) {
 }
 
 .deps-ziel {
-    /* font-size: 25px; */
     line-height: 1;
 }
 
@@ -346,7 +292,7 @@ g.transl.stop > g:not(.bficon) {
 
 .deps-abfahrt {
     text-align: center;
-    font-size: x-large; /* neu */
+    font-size: x-large;
 }
 
 @media (max-width: 530px) {
@@ -421,7 +367,7 @@ g.transl.stop > g:not(.bficon) {
     
     .deps-ziel {
         font-size: medium;
-        word-break: break-word; /* break-all */
+        word-break: break-word;
     }
     
     .popup-line > .leaflet-popup-content-wrapper > .leaflet-popup-content {
@@ -447,17 +393,17 @@ g.transl.stop > g:not(.bficon) {
 }
 
 .lds-ring {
-  height: 55px; /* was 80px */
+  height: 55px;
   margin-bottom: 10px;
 }
 .lds-ring div {
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 40px; /* was 51px */
+  width: 40px;
   height: 40px;
-  margin: 5px; /* was 6px */
-  border: 5px solid #fff; /* was 6px */
+  margin: 5px;
+  border: 5px solid #fff;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #000 transparent transparent transparent;

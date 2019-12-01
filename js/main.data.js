@@ -1,83 +1,174 @@
-var hstLineColors = {
-      "510":	{ "fg": "#fff", "bg": "#b06520" }
-    , "511":	{ "fg": "#fff", "bg": "#15b6b9" }
-    , "512":	{ "fg": "#fff", "bg": "#b06520" }
-    , "513":	{ "fg": "#fff", "bg": "#7f4984" }
-    , "514":	{ "fg": "#fff", "bg": "#f49b00" }
-    , "515":	{ "fg": "#fff", "bg": "#c10004" }
-    , "516":	{ "fg": "#fff", "bg": "#7eaf49" }
-    , "517":	{ "fg": "#fff", "bg": "#619f4e" }
-    , "518":	{ "fg": "#fff", "bg": "#007bc1" }
-    , "519":	{ "fg": "#fff", "bg": "#007bc1" }
-    , "520":	{ "fg": "#fff", "bg": "#e63758" }
-    , "521":	{ "fg": "#fff", "bg": "#df0008" }
-    , "524":	{ "fg": "#fff", "bg": "#a36501" }
-    , "525":	{ "fg": "#fff", "bg": "#df0008" }
-    , "527":	{ "fg": "#fff", "bg": "#7c277d" }
-    , "528":	{ "fg": "#fff", "bg": "#1784c1" }
-    , "530":	{ "fg": "#fff", "bg": "#e60253" }
-    , "532":	{ "fg": "#fff", "bg": "#364a9c" }
-    , "534":	{ "fg": "#fff", "bg": "#567b3e" }
-    , "535":	{ "fg": "#fff", "bg": "#e14c25" }
-    , "536":	{ "fg": "#fff", "bg": "#7fceef" }
-    , "538":	{ "fg": "#fff", "bg": "#006cb6" }
-    , "539":	{ "fg": "#fff", "bg": "#897300" }
-    , "541":	{ "fg": "#fff", "bg": "#9c590f" }
-    , "542":	{ "fg": "#fff", "bg": "#71c837" }
-    , "543":	{ "fg": "#fff", "bg": "#f49b00" }
-    , "SB71":	{ "fg": "#fff", "bg": "#15b6b9" }
-    , "SB72":	{ "fg": "#fff", "bg": "#0c919c" }
-    /*
-    , "NE1":	{ "fg": "#fff", "bg": "#ff2a2a" }
-    , "NE2":	{ "fg": "#fff", "bg": "#ff6600" }
-    , "NE3":	{ "fg": "#000", "bg": "#ffcc00" }
-    , "NE4":	{ "fg": "#fff", "bg": "#2ca02c" }
-    , "NE5":	{ "fg": "#fff", "bg": "#5f8dd3" }
-    , "NE6":	{ "fg": "#fff", "bg": "#7137c8" }
-    , "NE7":	{ "fg": "#fff", "bg": "#a05a2c" }
-    , "NE9":	{ "fg": "#fff", "bg": "#800080" }
-    , "NE19":	{ "fg": "#fff", "bg": "#a02c2c" }
-    , "NE22":	{ "fg": "#fff", "bg": "#006cb6" }
-    , "NE31":	{ "fg": "#fff", "bg": "#803300" }
-    , "NE32":	{ "fg": "#fff", "bg": "#364a9c" }
-    */
-    , "NE1":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE2":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE3":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE4":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE5":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE6":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE7":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE9":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE19":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE22":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE31":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "NE32":	{ "fg": "#ffcc00", "bg": "#000" }
-    , "1":		{ "fg": "#fff", "bg": "#999999" }
-    , "9":		{ "fg": "#fff", "bg": "#999999" }
-    , "57":		{ "fg": "#fff", "bg": "#999999" }
-    , "84":		{ "fg": "#fff", "bg": "#999999" }
-    , "376":	{ "fg": "#fff", "bg": "#999999" }
-    , "432":	{ "fg": "#fff", "bg": "#999999" }
-    , "442":	{ "fg": "#fff", "bg": "#999999" }
-    , "523":	{ "fg": "#fff", "bg": "#999999" }
-    , "529":	{ "fg": "#fff", "bg": "#999999" }
-    , "553":	{ "fg": "#fff", "bg": "#999999" }
-    , "555":	{ "fg": "#fff", "bg": "#999999" }
-    , "556":	{ "fg": "#fff", "bg": "#999999" }
-    , "591":	{ "fg": "#fff", "bg": "#999999" }
-    , "594":	{ "fg": "#fff", "bg": "#999999" }
-    , "S5":		{ "fg": "#fff", "bg": "#619f4e" }
-    , "S8":		{ "fg": "#fff", "bg": "#619f4e" }
-    , "S9":		{ "fg": "#fff", "bg": "#619f4e" }
-    , "RE4":	{ "fg": "#fff", "bg": "#f4731f" }
-    , "RE7":	{ "fg": "#fff", "bg": "#f4731f" }
-    , "RE13":	{ "fg": "#fff", "bg": "#f4731f" }
-    , "RE16":	{ "fg": "#fff", "bg": "#f4731f" }
-    , "RE17":	{ "fg": "#fff", "bg": "#f4731f" }
-    , "RB40":	{ "fg": "#fff", "bg": "#40c1f3" }
-    , "RB52":	{ "fg": "#fff", "bg": "#40c1f3" }
-    , "RB91":	{ "fg": "#fff", "bg": "#40c1f3" }
+var hstNetzplanLines = {
+      "510":    { "fg": "#fff", "bg": "#b06520",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/510",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/510.pdf" }
+    , "511":    { "fg": "#fff", "bg": "#15b6b9",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/511",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/511.pdf" }
+    , "512":    { "fg": "#fff", "bg": "#b06520",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/512",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/512.pdf" }
+    , "513":    { "fg": "#fff", "bg": "#7f4984",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/513",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/513.pdf" }
+    , "514":    { "fg": "#fff", "bg": "#f49b00",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/514",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/514.pdf" }
+    , "515":    { "fg": "#fff", "bg": "#c10004",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/515",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/515.pdf" }
+    , "516":    { "fg": "#fff", "bg": "#7eaf49",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/516",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/516.pdf" }
+    , "517":    { "fg": "#fff", "bg": "#619f4e",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/517",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/517.pdf" }
+    , "518":    { "fg": "#fff", "bg": "#007bc1",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/518",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/518.pdf" }
+    , "519":    { "fg": "#fff", "bg": "#007bc1",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/519",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/519.pdf" }
+    , "520":    { "fg": "#fff", "bg": "#e63758",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/520",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/520.pdf" }
+    , "521":    { "fg": "#fff", "bg": "#df0008",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/521",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/521.pdf" }
+    , "524":    { "fg": "#fff", "bg": "#a36501",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/524",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/524.pdf" }
+    , "525":    { "fg": "#fff", "bg": "#df0008",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/525",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/525.pdf" }
+    , "527":    { "fg": "#fff", "bg": "#7c277d",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/527",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/527.pdf" }
+    , "528":    { "fg": "#fff", "bg": "#1784c1",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/528",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/528.pdf" }
+    , "530":    { "fg": "#fff", "bg": "#e60253",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/530",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/530.pdf" }
+    , "532":    { "fg": "#fff", "bg": "#364a9c",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/532",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/532.pdf" }
+    , "534":    { "fg": "#fff", "bg": "#567b3e",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/534",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/534.pdf" }
+    , "535":    { "fg": "#fff", "bg": "#e14c25",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/535",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/535.pdf" }
+    , "536":    { "fg": "#fff", "bg": "#7fceef",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/536",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/536.pdf" }
+    , "538":    { "fg": "#fff", "bg": "#006cb6",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/538",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/538.pdf" }
+    , "539":    { "fg": "#fff", "bg": "#897300",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/539",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/539.pdf" }
+    , "541":    { "fg": "#fff", "bg": "#9c590f",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/541",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/541.pdf" }
+    , "542":    { "fg": "#fff", "bg": "#71c837",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/542",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/542.pdf" }
+    , "543":    { "fg": "#fff", "bg": "#f49b00",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/543",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/543.pdf" }
+    , "SB71":   { "fg": "#fff", "bg": "#15b6b9",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/sb71",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/SB71.pdf" }
+    , "SB72":   { "fg": "#fff", "bg": "#0c919c",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/sb72",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/SB72.pdf" }
+    , "NE1":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#ff2a2a", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne1",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE1.pdf" }
+    , "NE2":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#ff6600", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne2",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE2.pdf" }
+    , "NE3":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#000", "bg": "#ffcc00", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne3",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE3.pdf" }
+    , "NE4":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#2ca02c", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne4",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE4.pdf" }
+    , "NE5":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#5f8dd3", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne5",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE5.pdf" }
+    , "NE6":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#7137c8", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne6",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE6.pdf" }
+    , "NE7":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#a05a2c", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne7",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE7.pdf" }
+    , "NE9":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#800080", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne9",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE9.pdf" }
+    , "NE19":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#a02c2c", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne19",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE19.pdf" }
+    , "NE22":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#006cb6", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne22",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE22.pdf" }
+    , "NE31":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#803300", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne31",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE31.pdf" }
+    , "NE32":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#364a9c", */
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne32",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE32.pdf" }
+    , "1":      { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/1",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/1.pdf" }
+    , "9":      { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/9",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/9.pdf" }
+    , "57":     { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/57",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/57.pdf" }
+    , "84":     { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/84",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/84-1-2.pdf" }
+    , "376":    { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/376",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/376-20191215.pdf" }
+    , "432":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "http://www.netzplan-dortmund.de/resources/Server/Download/Linienfahrplaene/FZ_432.pdf" }
+    , "442":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "http://www.netzplan-dortmund.de/resources/Server/Download/Linienfahrplaene/FZ_442.pdf" }
+    , "523":    { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/523",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/523.pdf" }
+    , "529":    { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/529",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/529.pdf" }
+    , "553":    { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/553",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/553.pdf" }
+    , "555":    { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/555",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/555.pdf" }
+    , "556":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "http://www.ver-kehr.de/34392.cbin" }
+    , "591":    { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/591",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/Linie_591_20191215.pdf" }
+    , "594":    { "fg": "#fff", "bg": "#999999",
+                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/594",
+                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/Linie_594_20191215.pdf" }
+    , "S5":     { "fg": "#fff", "bg": "#619f4e" }
+    , "S8":     { "fg": "#fff", "bg": "#619f4e" }
+    , "S9":     { "fg": "#fff", "bg": "#619f4e" }
+    , "RE4":    { "fg": "#fff", "bg": "#f4731f" }
+    , "RE7":    { "fg": "#fff", "bg": "#f4731f" }
+    , "RE13":   { "fg": "#fff", "bg": "#f4731f" }
+    , "RE16":   { "fg": "#fff", "bg": "#f4731f" }
+    , "RE17":   { "fg": "#fff", "bg": "#f4731f" }
+    , "RB40":   { "fg": "#fff", "bg": "#40c1f3" }
+    , "RB52":   { "fg": "#fff", "bg": "#40c1f3" }
+    , "RB91":   { "fg": "#fff", "bg": "#40c1f3" }
 }
 
 var hstNetzplanStops = {
@@ -564,140 +655,4 @@ var hstNetzplanStops = {
     'de:05962:3338': {'name': 'Wiblingwerde Über dem Dorfe'},
     'de:05962:3347': {'name': 'Wiblingwerde Harpkestr.'},
     'de:05962:3348': {'name': 'Wiblingwerde Todtenhelle'}
-}
-
-var infoLinks = {
-      "510":    "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/510"
-    , "511":    "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/511"
-    , "512":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/512"
-    , "513":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/513"
-    , "514":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/514"
-    , "515":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/515"
-    , "516":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/516"
-    , "517":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/517"
-    , "518":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/518"
-    , "519":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/519"
-    , "520":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/520"
-    , "521":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/521"
-    , "524":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/524"
-    , "525":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/525"
-    , "527":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/527"
-    , "528":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/528"
-    , "530":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/530"
-    , "532":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/532"
-    , "534":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/534"
-    , "535":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/535"
-    , "536":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/536"
-    , "538":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/538"
-    , "539":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/539"
-    , "541":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/541"
-    , "542":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/542"
-    , "543":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/543"
-    , "SB71":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/sb71"
-    , "SB72":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/sb72"
-    , "NE1":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne1"
-    , "NE2":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne2"
-    , "NE3":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne3"
-    , "NE4":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne4"
-    , "NE5":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne5"
-    , "NE6":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne6"
-    , "NE7":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne7"
-    , "NE9":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne9"
-    , "NE19":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne19"
-    , "NE22":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne22"
-    , "NE31":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne31"
-    , "NE32":	"https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne32"
-    , "1":		"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/1"
-    , "9":		"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/9"
-    , "57":		"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/57"
-    , "84":		"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/84"
-    , "376":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/376"
-    //, "432":	
-    //, "442":	
-    , "523":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/523"
-    , "529":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/529"
-    , "553":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/553"
-    , "555":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/555"
-    //, "556":	
-    , "591":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/591"
-    , "594":	"https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/594"
-    /*, "S5":		
-    , "S8":		
-    , "S9":		
-    , "RE4":	
-    , "RE7":	
-    , "RE13":	
-    , "RE16":	
-    , "RE17":	
-    , "RB40":	
-    , "RB52":	
-    , "RB91":	*/
-}
-
-var pdfLinks = {
-      "510":    "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/510.pdf"
-    , "511":    "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/511.pdf"
-    , "512":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/512.pdf"
-    , "513":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/513.pdf"
-    , "514":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/514.pdf"
-    , "515":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/515.pdf"
-    , "516":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/516.pdf"
-    , "517":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/517.pdf"
-    , "518":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/518.pdf"
-    , "519":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/519.pdf"
-    , "520":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/520.pdf"
-    , "521":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/521.pdf"
-    , "524":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/524.pdf"
-    , "525":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/525.pdf"
-    , "527":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/527.pdf"
-    , "528":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/528.pdf"
-    , "530":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/530.pdf"
-    , "532":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/532.pdf"
-    , "534":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/534.pdf"
-    , "535":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/535.pdf"
-    , "536":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/536.pdf"
-    , "538":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/538.pdf"
-    , "539":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/539.pdf"
-    , "541":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/541.pdf"
-    , "542":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/542.pdf"
-    , "543":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/543.pdf"
-    , "SB71":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/SB71.pdf"
-    , "SB72":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/SB72.pdf"
-    , "NE1":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE1.pdf"
-    , "NE2":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE2.pdf"
-    , "NE3":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE3.pdf"
-    , "NE4":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE4.pdf"
-    , "NE5":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE5.pdf"
-    , "NE6":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE6.pdf"
-    , "NE7":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE7.pdf"
-    , "NE9":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE9.pdf"
-    , "NE19":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE19.pdf"
-    , "NE22":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE22.pdf"
-    , "NE31":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE31.pdf"
-    , "NE32":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE32.pdf"
-    , "1":		"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/1.pdf"
-    , "9":		"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/9.pdf"
-    , "57":		"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/57.pdf"
-    , "84":		"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/84-1-2.pdf"
-    , "376":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/376-20191215.pdf"
-    , "432":	"http://www.netzplan-dortmund.de/resources/Server/Download/Linienfahrplaene/FZ_432.pdf"
-    , "442":	"http://www.netzplan-dortmund.de/resources/Server/Download/Linienfahrplaene/FZ_442.pdf"
-    , "523":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/523.pdf"
-    , "529":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/529.pdf"
-    , "553":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/553.pdf"
-    , "555":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/555.pdf"
-    , "556":	"http://www.ver-kehr.de/34392.cbin"
-    , "591":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/Linie_591_20191215.pdf"
-    , "594":	"https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/Linie_594_20191215.pdf"
-    /*, "S5":		"https://www.vrr.de/fileadmin/user_upload/pdf/S-Bahn_Linienplaene/S5_2019.pdf"
-    , "S8":		"https://www.vrr.de/fileadmin/user_upload/pdf/S-Bahn_Linienplaene/S8_2019.pdf"
-    , "S9":		"https://www.vrr.de/fileadmin/user_upload/pdf/S-Bahn_Linienplaene/S9_2019.pdf"
-    , "RE4":	"https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE4_2019.pdf"
-    , "RE7":	"https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE7_2019.pdf"
-    , "RE13":	"https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE13_2019.pdf"
-    , "RE16":	"https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE16_2019.pdf"
-    , "RE17":	"https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE17_2019.pdf"
-    , "RB40":	"https://www.vrr.de/fileadmin/user_upload/pdf/RB_Linienplaene/RB40_2019.pdf"
-    , "RB52":	"https://www.vrr.de/fileadmin/user_upload/pdf/RB_Linienplaene/RB52_2019.pdf"
-    , "RB91":   "https://www.vrr.de/fileadmin/user_upload/pdf/RB_Linienplaene/RB91_2019.pdf"*/
 }

@@ -1,5 +1,5 @@
 function svgValidate() {
-    let ignoreClasses = ["transl", "leaflet-drag-target", "stop-backdrop-popup-open", "animate-flicker", "stoptext-popup-open", "fil0", "fil1", "fo-stopinfo", "fo-stopinfo-div", "deps-container-grid", "deps-headercell", "deps-nr", "deps-ziel", "deps-abfahrt", "lineblob-svg", "lineblob-g", "linenr-flex", "bottom-flex", "bottom-buttons", "bottom-icons", "fas", "fa-wheelchair", "lds-ring", "center-in-deps"];
+    let ignoreClasses = ["transl", "leaflet-drag-target", "stop-backdrop-popup-open", "animate-flicker", "stoptext-popup-open", "fil0", "fil1", "deps-container-grid", "deps-headercell", "deps-nr", "deps-ziel", "deps-abfahrt", "lineblob-svg", "lineblob-g", "linenr-flex", "bottom-flex", "bottom-buttons", "bottom-icons", "lds-ring", "center-in-deps"];
     let knownClasses = {
         "stop": ["rect", "g", "path"],
         "stoptext": ["text"],
@@ -21,7 +21,7 @@ function svgValidate() {
     console.log("closing any open popups . . .");
     mymap.closePopup();
 
-    allElems = $(svg).find("*"); // war viewPort find
+    allElems = $(svg).find("*");
 
     console.info("looking for unknown classes");
     var found_classes = new Set();
@@ -62,16 +62,16 @@ function svgValidate() {
     console.info("looking for class=stoptext without data-stopid or data-lineid");
     $('.stoptext:not([data-stopid])').each(function(i, obj) {console.log("class=stoptext and no data-stopid on object", obj)});
     $('.stoptext:not([data-lineid])').each(function(i, obj) {console.log("class=stoptext and no data-lineid on object", obj)});
-    
+
     console.info("looking for class=route without data-lineid");
     $('.route:not([data-lineid])').each(function(i, obj) {console.log("class=route and no data-lineid on object", obj)});
-    
+
     console.info("looking for class=linetext without data-lineid");
     $('.linetext:not([data-lineid])').each(function(i, obj) {console.log("class=linetext and no data-lineid on object", obj)});
-    
+
     console.info("looking for class=lineblob without data-lineid");
     $('.lineblob:not([data-lineid])').each(function(i, obj) {console.log("class=lineblob and no data-lineid on object", obj)});
-    
+
     console.info("looking for class=infotext without data-lineid");
     $('.infotext:not([data-lineid])').each(function(i, obj) {console.log("class=infotext and no data-lineid on object", obj)});
 
@@ -105,13 +105,9 @@ function svgValidate() {
         }
     });
 
-    /* class=stoptext auf buffer statt eigentlichem text..? (anhand style) */
-    // todo
-
     console.info("looking for unknown stopids in data-stopid");
     allIFOPTs = Object.keys(hstNetzplanStops);
     $('[data-stopid]').each(function(i, obj) {
-        // eigentlich reicht die pruefung mit der liste.
         if (!allIFOPTs.includes(obj.dataset.stopid)) {
             console.log("unknown IFOPT " + obj.dataset.stopid + " for ", obj);
         }
@@ -120,9 +116,8 @@ function svgValidate() {
     console.info("looking for unknown line numbers in data-lineid");
     $('[data-lineid]').each(function(i, obj) {
         let liniennummern = (typeof obj.dataset.lineid == "undefined" || obj.dataset.lineid == "") ? [] : obj.dataset.lineid.split(";");
-        // auch hier reicht eigentlich dieser abgleich.
         liniennummern.forEach(function(value) {
-            if (!(value in hstLineColors)) {
+            if (!(value in hstNetzplanLines)) {
                 console.log("unknown line number " + value + " for ", obj);
             }
         });
@@ -176,13 +171,6 @@ function svgValidate() {
             if (!(Array.from(sorted_all_only).sort().join(";") == Array.from(sorted_target).sort().join(";"))) {
                 console.log("stop data-only-lineid values do not match data-lineid for stoptext ", _c_stoptext, "relevant stop objects: ", _c_stops);
             }
-            // noch mehr mit data-only-lineid?
         }
     }
-
-    /* + weitere ueberpruefung: auf jedes anklickbare element createStopfO machen und fehler fangen */
-    // todo
-
-    // + .. manuell benoetigt: fehlende groups an haltestellen mit linienendpunkten/arrows.
-    // todo
 }
