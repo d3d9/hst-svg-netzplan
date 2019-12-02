@@ -535,7 +535,7 @@ function linesClicked(e, lines, stopid, prevlines) {
                 infoLink.target = "_blank";
                 linediv.appendChild(infoLink);
             }
-
+            /* -- erstmal abgeschaltet, Fahrplan kann unter Info-Link abgerufen werden.
             if (!!hstNetzplanLines[l].pdf) {
                 linediv.appendChild(document.createElement('br'));
                 let pdfLink = document.createElement('a');
@@ -544,6 +544,7 @@ function linesClicked(e, lines, stopid, prevlines) {
                 pdfLink.target = "_blank";
                 linediv.appendChild(pdfLink);
             }
+            */
         }
 
         lineinfoTop.appendChild(linediv);
