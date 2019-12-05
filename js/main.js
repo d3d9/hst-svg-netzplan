@@ -1,5 +1,6 @@
 var mymap = null;
 var svgLayer = null;
+var htmlLegend = null;
 var svg = null;
 var NS = null;
 
@@ -759,6 +760,38 @@ document.addEventListener('DOMContentLoaded', function() {
         //zoomLevelOffset: -5
     });
     miniMap.addTo(mymap);
+
+    htmlLegend = L.control.htmllegend({
+        legends: [{
+            name: 'Informationen',
+            layer: null,
+            elements: [{
+                label: null,
+                html: ('<h2>Der interaktive Netzplan der Hagener Straßenbahn!</h2><br/><br/>'
+                     + 'Erkunden Sie das Netz und besorgen Sie sich die Infos, die Sie brauchen.<br/>'
+                     + 'Nahezu alle Objekte auf dem Plan sind anklickbar: die Haltestellen, Liniennummern und -strecken, sowie Texte.<br/>'
+                     + '<emph>Probieren Sie es aus!</emph><hr/>'
+                     + '<img src="./images/screenshot-click.png"/><br/>'
+                     + 'Im Fenster mit Linieninformationen finden Sie einen Link zu unserer Website mit den aktuellsten Hinweisen zu der entsprechenden Linie, z.B. den Änderungen zum letzten Fahrplanwechsel, und einen interaktiven Linienfahrplan.'
+                     + '<hr/>Beim Klick auf eine Haltestelle oder ihren Namen erhalten Sie die nächsten Abfahrten ab dieser Haltestelle angezeigt, sowie eine Angabe aller Linien, die dort halten.<br/>'
+                     + '<img src="./images/screenshot-stop.png"/><br/>'
+                     // + 'Bei Klick auf "Linien hervorheben" werden alle Linien, die diese Haltestelle bedienen, hervorgehoben, so erkennen Sie schnell die dortigen Direktverbindungen.<br/>'
+                     // + '[Sie können sich ebenfalls einen Aushang wie von der echten Haltestelle gewohnt im PDF-Format ausdrucken.] Bei großen Haltestellen finden Sie hier auch die Haltestellenumgebungspläne im PDF-Format. Ebenfalls sind im Fenster die Liniennummern anklickbar (siehe Abschnitt hierunter).<br/>[Screenshot Linie angeklickt (einzeln)]<br/>'
+                     + '<hr/>Auf <a target="_blank" href="https://www.strassenbahn-hagen.de/fahrplaene-strecken/liniennetzplaene-tag-und-nachtnetz.html">dieser</a> Seite k&ouml;nnen Sie sich die Netzpl&auml;ne im PDF-Format herunterladen.<br/>'
+                     + 'Unter <a target="_blank" href="https://www.xn--mehr-fr-hagen-1ob.de/">mehr-f&uuml;r-hagen.de</a> gibt es weitere Informationen zum neuen Netz der HST.<br/>'
+                     + '<br/><hr/><small>Programmierung: <a target="_blank" href="https://d3d9.xyz/">Kevin Arutyunyan</a> | <a target="_blank" href="https://github.com/d3d9/hst-svg-netzplan">Projektseite</a></small><br/><br/>'
+                ),
+                style: null
+            }]
+        }],
+        position: 'topright',
+        collapseSimple: false,
+        collapsedOnInit: window.innerWidth < 1200,
+        defaultOpacity: 0.7,
+        visibleIcon: 'icon icon-eye',
+        hiddenIcon: 'icon icon-eye-slash'
+    });
+    mymap.addControl(htmlLegend);
 
     let zentrierenIconHTML = '<svg style="width: 100%; height: 100%;" width="3.0606mm" height="3.0857mm" version="1.1" viewBox="0 0 3.0606 3.0857" xmlns="http://www.w3.org/2000/svg"><g transform="translate(2.5226 .68005)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/><g transform="matrix(-1 0 0 1 -1.9846 0)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/></g><g transform="matrix(1 0 0 -1 0 1.7256)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/></g><g transform="rotate(180 -.99231 .86278)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/></g></g></svg>';
     L.easyButton(zentrierenIconHTML, function(btn, map){
