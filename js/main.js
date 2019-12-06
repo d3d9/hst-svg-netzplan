@@ -9,6 +9,7 @@ var svg_icon_p_r = null;
 var svg_icon_radbox = null;
 
 var svgElementBounds = [ [ 51.43, 7.827 ], [ 51.23, 7.382 ] ];
+var popupPanPadding = L.point(45, 50);
 
 var useHash = true;
 
@@ -426,7 +427,7 @@ function stopClicked(e, stopid) {
         stoptext.dataset.oldLatLng = _latLng.lat + ';' + _latLng.lng;
     }
 
-    popup = new DraggablePopup({'autoPanPadding': L.point(45, 10), 'className': "popup-line" + (_hasTip ? "" : " no-tip")}, svgLayer).setLatLng(_latLng).setContent(popupDiv).openOn(mymap);
+    popup = new DraggablePopup({'autoPanPadding': popupPanPadding, 'className': "popup-line" + (_hasTip ? "" : " no-tip")}, svgLayer).setLatLng(_latLng).setContent(popupDiv).openOn(mymap);
     noDrag(popup, titleSpan);
     noDrag(popup, deps);
     noDrag(popup, linienSpan);
@@ -607,7 +608,7 @@ function linesClicked(e, lines, stopid, prevlines) {
             _latLng = mymap.mouseEventToLatLng(e);
         }
     }
-    popup = new DraggablePopup({'autoPanPadding': L.point(45, 10), 'className': "popup-line" + (_hasTip ? "" : " no-tip")}, svgLayer).setLatLng(_latLng).setContent(pContent).openOn(mymap);
+    popup = new DraggablePopup({'autoPanPadding': popupPanPadding, 'className': "popup-line" + (_hasTip ? "" : " no-tip")}, svgLayer).setLatLng(_latLng).setContent(pContent).openOn(mymap);
     noDrag(popup, titleSpan);
     noDrag(popup, lineinfoTop);
     for (var i = 0; i < bottomFlexButtons.children.length; i++) {
@@ -641,6 +642,7 @@ function prepareSvg(svg, NS) {
         deltaMoves(obj);
         obj.addEventListener('click', function(e) {
             mymap.closePopup();
+            htmlLegend.close();
         });
     });
 
@@ -648,6 +650,7 @@ function prepareSvg(svg, NS) {
         deltaMoves(obj);
         obj.addEventListener('click', function(e) {
             e.stopPropagation();
+            htmlLegend.close();
             e._savedLatLng = mymap.mouseEventToLatLng(e);
             stopClicked(e, obj.dataset.stopid);
         });
@@ -658,6 +661,7 @@ function prepareSvg(svg, NS) {
         deltaMoves(obj);
         obj.addEventListener('click', function(e) {
             e.stopPropagation();
+            htmlLegend.close();
             e._savedLatLng = mymap.mouseEventToLatLng(e);
             linesClicked(e, obj.dataset.lineid.split(";"));
         });
@@ -791,6 +795,16 @@ document.addEventListener('DOMContentLoaded', function() {
         visibleIcon: 'icon icon-eye',
         hiddenIcon: 'icon icon-eye-slash'
     });
+    htmlLegend.close = function() {
+        let header = this._container.firstChild.firstChild;
+        L.DomUtil.addClass(header, 'closed');
+    };
+    htmlLegend.open = function() {
+        let header = this._container.firstChild.firstChild;
+        if (L.DomUtil.hasClass(header, 'closed')) {
+            L.DomUtil.removeClass(header, 'closed');
+        }
+    }
     mymap.addControl(htmlLegend);
 
     let zentrierenIconHTML = '<svg style="width: 100%; height: 100%;" width="3.0606mm" height="3.0857mm" version="1.1" viewBox="0 0 3.0606 3.0857" xmlns="http://www.w3.org/2000/svg"><g transform="translate(2.5226 .68005)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/><g transform="matrix(-1 0 0 1 -1.9846 0)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/></g><g transform="matrix(1 0 0 -1 0 1.7256)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/></g><g transform="rotate(180 -.99231 .86278)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/></g></g></svg>';
