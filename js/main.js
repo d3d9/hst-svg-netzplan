@@ -463,7 +463,7 @@ function highlightStop(stopid) {
         newNode.id += "-backdrop";
         newNode.dataset.stopid = stopid;
         newNode.style = "";
-        newNode.classList.remove('stop');
+        while(newNode.classList.length) { newNode.classList.remove(newNode.classList[0]); }
         newNode.classList.add('stop-backdrop-popup-open');
         newNode.classList.add('animate-flicker');
         obj.parentNode.prepend(newNode);
