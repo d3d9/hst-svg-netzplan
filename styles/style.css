@@ -310,6 +310,11 @@ g.transl.stop > g:not(.bficon) {
     user-select: none;
 }
 
+.bottom-buttons > a {
+    text-decoration: unset;
+    color: unset;
+}
+
 .linenr-flex {
     display: flex;
     flex-flow: row wrap;
