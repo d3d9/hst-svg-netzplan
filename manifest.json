@@ -1,0 +1,30 @@
+{
+  "name": "Interaktiver Netzplan HST",
+  "short_name": "HST Netzplan",
+  "description": "Interaktiver Netzplan vom neuen Netz der HST",
+  "lang": "de-DE",
+  "start_url": "https://mehr-für-hagen.de/netzplan/",
+  "scope": "/netzplan/",
+  "display": "standalone",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "de.vrr.hstmobileapp",
+      "url": "https://play.google.com/store/apps/details?id=de.vrr.hstmobileapp"
+    }
+  ],
+  "icons": [
+    {
+       "src": "/android-chrome-192x192.png",
+       "sizes": "192x192",
+       "type": "image/png"
+    },
+    {
+       "src": "/android-chrome-512x512.png",
+       "sizes": "512x512",
+       "type": "image/png"
+    }
+  ]
+}
