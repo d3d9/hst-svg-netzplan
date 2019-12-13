@@ -158,17 +158,28 @@ var hstNetzplanLines = {
     , "594":    { "fg": "#fff", "bg": "#999999",
                   "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/594",
                   "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/Linie_594_20191215.pdf" }
-    , "S5":     { "fg": "#fff", "bg": "#619f4e" }
-    , "S8":     { "fg": "#fff", "bg": "#619f4e" }
-    , "S9":     { "fg": "#fff", "bg": "#619f4e" }
-    , "RE4":    { "fg": "#fff", "bg": "#f4731f" }
-    , "RE7":    { "fg": "#fff", "bg": "#f4731f" }
-    , "RE13":   { "fg": "#fff", "bg": "#f4731f" }
-    , "RE16":   { "fg": "#fff", "bg": "#f4731f" }
-    , "RE17":   { "fg": "#fff", "bg": "#f4731f" }
-    , "RB40":   { "fg": "#fff", "bg": "#40c1f3" }
-    , "RB52":   { "fg": "#fff", "bg": "#40c1f3" }
-    , "RB91":   { "fg": "#fff", "bg": "#40c1f3" }
+    , "S5":     { "fg": "#fff", "bg": "#619f4e",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/S-Bahn_Linienplaene/S5.pdf" }
+    , "S8":     { "fg": "#fff", "bg": "#619f4e",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/S-Bahn_Linienplaene/S8.pdf" }
+    , "S9":     { "fg": "#fff", "bg": "#619f4e",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/S-Bahn_Linienplaene/S9.pdf" }
+    , "RE4":    { "fg": "#fff", "bg": "#f4731f",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE4.pdf" }
+    , "RE7":    { "fg": "#fff", "bg": "#f4731f",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE7.pdf" }
+    , "RE13":   { "fg": "#fff", "bg": "#f4731f",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE13.pdf" }
+    , "RE16":   { "fg": "#fff", "bg": "#f4731f",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE16.pdf" }
+    , "RE17":   { "fg": "#fff", "bg": "#f4731f",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE17.pdf" }
+    , "RB40":   { "fg": "#fff", "bg": "#40c1f3",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RB_Linienplaene/RB40.pdf" }
+    , "RB52":   { "fg": "#fff", "bg": "#40c1f3",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RB_Linienplaene/RB52.pdf" }
+    , "RB91":   { "fg": "#fff", "bg": "#40c1f3",
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RB_Linienplaene/RB91.pdf" }
 }
 
 var hstNetzplanStops = {

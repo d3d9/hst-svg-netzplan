@@ -545,8 +545,8 @@ function linesClicked(e, lines, stopid, prevlines) {
                 infoLink.target = "_blank";
                 linediv.appendChild(infoLink);
             }
-            /* -- erstmal abgeschaltet, Fahrplan kann unter Info-Link abgerufen werden.
-            if (!!hstNetzplanLines[l].pdf) {
+            // PDF erstmal nur im else, Bus-Fahrplaene sollen unter ihrem Info-Link abgerufen werden.
+            else if (!!hstNetzplanLines[l].pdf) {
                 linediv.appendChild(document.createElement('br'));
                 let pdfLink = document.createElement('a');
                 pdfLink.innerHTML = "PDF-Fahrplan herunterladen";
@@ -554,7 +554,6 @@ function linesClicked(e, lines, stopid, prevlines) {
                 pdfLink.target = "_blank";
                 linediv.appendChild(pdfLink);
             }
-            */
         }
 
         lineinfoTop.appendChild(linediv);
