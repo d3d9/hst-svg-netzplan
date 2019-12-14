@@ -780,9 +780,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 label: null,
                 html: ('<h2>Der interaktive Netzplan der Hagener Straßenbahn!</h2><br/><br/>'
                      + 'Erkunden Sie das Netz und besorgen Sie sich die Infos, die Sie brauchen.<br/>'
-                     + 'Nahezu alle Objekte auf dem Plan sind anklickbar: die Haltestellen, Liniennummern und -strecken, sowie Texte.<br/>'
-                     + '<emph>Probieren Sie es aus!</emph><hr/>'
-                     + '<img src="./images/screenshot-click.png"/><br/>'
+                     + 'Nahezu alle Objekte auf dem Plan sind anklickbar: die Haltestellen, Liniennummern und -strecken, sowie Texte.'
+                     // + '<br/><emph>Probieren Sie es aus!</emph>'
+                     + '<hr/><img src="./images/screenshot-click.png"/><br/>'
                      + 'Im Fenster mit Linieninformationen finden Sie einen Link zu unserer Website mit den aktuellsten Hinweisen zu der entsprechenden Linie, z.B. den Änderungen zum letzten Fahrplanwechsel, und einen interaktiven Linienfahrplan.'
                      + '<hr/>Beim Klick auf eine Haltestelle oder ihren Namen erhalten Sie die nächsten Abfahrten ab dieser Haltestelle angezeigt, sowie eine Angabe aller Linien, die dort halten.<br/>'
                      + '<img src="./images/screenshot-stop.png"/><br/>'
