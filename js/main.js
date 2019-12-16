@@ -172,13 +172,14 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                 let deplist = result;
                 let noDepsShown = true;
                 let sumH = 0;
-                for (var di = 0; di < Math.min(deplist.length, 15); di++) {
+                for (var di = 0; di < deplist.length; di++) {
                     let _nr = document.createElement('div');
                     _nr.classList.add("deps-nr");
                     let _ziel = document.createElement('div');
                     _ziel.classList.add("deps-ziel");
                     let _abf = document.createElement('div');
                     _abf.classList.add("deps-abfahrt");
+
                     let dep = deplist[di];
                     if (dep.linenum.length > 4) {
                         _nr.innerHTML = dep.linenum;
@@ -194,20 +195,9 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                         }
                         _nr.appendChild(lineblob);
                     }
-                    if (dep.disp_direction == "Hauptbahnhof") {
-                        _ziel.innerHTML = "Hagen Hbf";
-                    }
-                    else if (dep.disp_direction == "MG Hbf /Europaplatz") {
-                        _ziel.innerHTML = "Mönchengladbach Hbf";
-                    }
-                    else if (dep.disp_direction == "Kierspe, Feuerwehrgerätehaus") {
-                        _ziel.innerHTML = "Kierspe Feuerwehrgeräteh.";
-                    }
-                    else if (dep.disp_direction == "Stadtmitte/Volme Galerie") {
-                        _ziel.innerHTML = "Stadtmitte";
-                    } else {
-                        _ziel.innerHTML = dep.disp_direction;
-                    }
+
+                    _ziel.innerHTML = dep.disp_direction;
+
                     if (dep.disp_countdown <= 0){ 
                         _abf.innerHTML = "sofort";
                         _abf.style["font-size"] = "larger";
@@ -255,9 +245,7 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                         }
                     }
                     noDepsShown = false;
-                    if (di >= 4 && dep.disp_countdown > 120) {
-                        break;
-                    }
+                    // jetzt serverseitig: if (di >= 4 && dep.disp_countdown > 120) break;
                 }
                 if (noDepsShown) {
                     elems.push(document.createElement('div'));
