@@ -163,7 +163,7 @@ function getLowerCenter(map, padding) {
 function updateDeps(popup, popupDiv, deps, stopid) {
     return $.ajax({
         type: "GET",
-        url: "https://d3d9.xyz:8007/?stopid=" + stopid,
+        url: "https://d3d9.xyz/stops/?stopid=" + stopid,
         headers: {},
         retryLimit : 3,
         success: function(result) {
