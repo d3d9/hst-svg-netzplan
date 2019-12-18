@@ -135,9 +135,9 @@ var hstNetzplanLines = {
                   "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/376",
                   "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/376-20191215.pdf" }
     , "432":    { "fg": "#fff", "bg": "#999999",
-                  "pdf": "http://www.netzplan-dortmund.de/resources/Server/Download/Linienfahrplaene/FZ_432.pdf" }
+                  "pdf": "https://www.bus-und-bahn.de/43616.cbin" }
     , "442":    { "fg": "#fff", "bg": "#999999",
-                  "pdf": "http://www.netzplan-dortmund.de/resources/Server/Download/Linienfahrplaene/FZ_442.pdf" }
+                  "pdf": "https://www.bus-und-bahn.de/43626.cbin" }
     , "523":    { "fg": "#fff", "bg": "#999999",
                   "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/523",
                   "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/523.pdf" }
