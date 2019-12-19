@@ -446,10 +446,12 @@ function highlightStop(stopid) {
 
     $('.stop[data-stopid="'+stopid+'"]').each(function(i, obj) {
         let nodeToClone = obj;
-        if (obj.tagName == "g") {
+        let prependTo = obj.parentNode;
+        if (obj.tagName.toUpperCase() == "G") {
+            if (obj.getAttribute("transform")) prependTo = obj;
             for (var i = 0; i < obj.childNodes.length; i++) {
                 // beim bearbeiten beachten: z. B. (g -> hauptobjekt, (g -> nebenobjekte)); nebenobjekte sind z. b. das innere des bahn logos oder die linienendepunkte.
-                if (typeof obj.childNodes[i].tagName != "undefined" && obj.childNodes[i].tagName != "g") {
+                if (typeof obj.childNodes[i].tagName != "undefined" && obj.childNodes[i].tagName.toUpperCase() != "G") {
                     nodeToClone = obj.childNodes[i];
                     break;
                 }
@@ -462,7 +464,7 @@ function highlightStop(stopid) {
         while(newNode.classList.length) { newNode.classList.remove(newNode.classList[0]); }
         newNode.classList.add('stop-backdrop-popup-open');
         newNode.classList.add('animate-flicker');
-        obj.parentNode.prepend(newNode);
+        prependTo.prepend(newNode);
     });
 }
 
@@ -679,7 +681,7 @@ function prepareSvg(svg, NS) {
                         }
                         return;
                     }
-                    if (obj.tagName == "path") {
+                    if (obj.tagName.toUpperCase() == "PATH") {
                         if ($('.stop[data-stopid="'+obj.dataset.stopid+'"]').not('.stop[data-only-lineid]').length == 2) {
                             // Normal weiter machen.
                             // Damit Linien wie bei Loxbaum oder Schwenke ausgeblendet sind (else)

@@ -65,7 +65,7 @@ Zukünftig sollte dies besser anders geschehen, bestenfalls ohne Umweg direkt mi
     - <small>_data-stopid der jeweiligen Endstelle? -- erstmal unwichtig_</small>
 
 - __Informationstexte__
-  - Objektart: __Text__, __Path__ <small>(Verbindungslinien)</small>, __Gruppe__ <small>(Pfeile 530-539/536-538)</small>
+  - Objektart: __Text__, __Path__ <small>(Verbindungslinien)</small>, __Gruppe__ <small>(Pfeile 530-539/536-538)</small>, __Rect__ <small>(z. B. Infoboxen, tempor&auml;r bis es eine "St&ouml;rungsinfo"-Klasse inkl. eigenem Popup usw. gibt)</small>
   - __class=infotext__
   - Datenattribute:
     - __data-lineid__

@@ -6,14 +6,14 @@ function svgValidate() {
         "route": ["path"],
         "linetext": ["text", "g"],
         "lineblob": ["g"],
-        "infotext": ["text", "path", "g"],
+        "infotext": ["text", "path", "g", "rect"],
         "bficon": ["g"]
     };
     let ignoreTagnamesOnlyLineid = ["path"];
     let knownData = {
         "lineid": ["stoptext",
                    "route", "linetext", "lineblob", "infotext"],
-        "stopid": ["stoptext", "stop"],
+        "stopid": ["stoptext", "stop", /* noch nicht verwendet: */ "lineblob", "infotext"],
         "onlyLineid": ["stop"]
     };
     let ignoreData = ["oldLatLng"];
@@ -31,7 +31,7 @@ function svgValidate() {
             obj.classList.forEach(function(_c){
                 if (!ignoreClasses.includes(_c)) {
                     found_classes.add(_c);
-                    if (!(_c in knownClasses)) {
+                    if (!(_c in knownClasses) && !_c.startsWith("_gen")) {
                         console.log("unknown class '"+ _c + "' on object", obj);
                     }
                     else {
