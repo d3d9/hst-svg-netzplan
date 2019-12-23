@@ -527,3 +527,62 @@ g.transl.stop > g:not(.bficon) {
     transform: rotate(360deg);
   }
 }
+
+.earlyterm {
+    font-style: italic;
+    color: rgb(255, 102, 0);
+}
+
+/* Tooltips; based on https://codepen.io/cbracco/pen/qzukg */
+
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 80%;
+  left: 0%; /* 100% */
+  margin-bottom: 5px;
+  /* margin-left: -80px; */
+  padding: 3px;
+  /*width: 160px;*/
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: small;
+  line-height: 1.2;
+}
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 80%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:active:before,
+[data-tooltip]:active:after {
+  visibility: visible;
+  opacity: 1;
+}

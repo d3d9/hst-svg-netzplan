@@ -197,7 +197,21 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                     }
 
                     _ziel.innerHTML = dep.disp_direction;
-
+                    if (dep.earlytermination) {
+                        _ziel.innerHTML += " (!)";
+                        _ziel.classList.add("earlyterm");
+                        _ziel.dataset.tooltip = "lt. Fahrplan bis " + dep.direction_planned;
+                        _ziel.setAttribute("aria-haspopup", true);
+                    }
+                    if (dep.disp_countdown <= 60 || dep.realtime) {
+                        let _d = new Date(dep.deptime_planned);
+                        let _uhrzString = _d.getHours().toString().padStart(2, '0') + ":" + _d.getMinutes().toString().padStart(2, '0');
+                        _abf.dataset.tooltip = "lt. Fahrplan " + _uhrzString;
+                        _abf.setAttribute("aria-haspopup", true);
+                        if (dep.realtime) {
+                            _abf.dataset.tooltip += ", heute " + (dep.delay ? ((dep.delay > 0 ? "+" : "") + dep.delay) : "pünktlich");
+                        }
+                    }
                     if (dep.disp_countdown <= 0){ 
                         _abf.innerHTML = "sofort";
                         _abf.style["font-size"] = "larger";
