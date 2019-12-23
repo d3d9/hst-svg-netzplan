@@ -538,7 +538,7 @@ g.transl.stop > g:not(.bficon) {
 [data-tooltip] {
   position: relative;
   z-index: 2;
-  cursor: pointer;
+  cursor: help;
 }
 [data-tooltip]:before,
 [data-tooltip]:after {
