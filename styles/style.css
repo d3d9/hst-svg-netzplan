@@ -490,7 +490,7 @@ g.transl.stop > g:not(.bficon) {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
   grid-column: 1 / span 3;
 }
 

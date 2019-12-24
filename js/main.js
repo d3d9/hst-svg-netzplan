@@ -264,10 +264,9 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                 if (noDepsShown) {
                     elems.push(document.createElement('div'));
                     elems[0].classList.add("center-in-deps");
-                    elems[0].style["padding-top"] = "10px";
-                    elems[0].style["padding-bottom"] = "10px";
-                    elems[0].style["font-size"] = "x-large";
-                    elems[0].innerHTML = "Keine Abfahrten gefunden.";
+                    elems[0].style["padding"] = "10px";
+                    elems[0].style["font-size"] = "larger";
+                    elems[0].innerHTML = "Keine Abfahrten in den n&auml;chsten 24 Stunden";
                     updateDepListe(deps, elems);
                 }
             }
@@ -790,6 +789,7 @@ document.addEventListener('DOMContentLoaded', function() {
                      + 'Im Fenster mit Linieninformationen finden Sie einen Link zu unserer Website mit den aktuellsten Hinweisen zu der entsprechenden Linie, z.B. den Änderungen zum letzten Fahrplanwechsel, und einen interaktiven Linienfahrplan.'
                      + '<hr/>Beim Klick auf eine Haltestelle oder ihren Namen erhalten Sie die nächsten Abfahrten ab dieser Haltestelle angezeigt, sowie eine Angabe aller Linien, die dort halten.<br/>'
                      + '<img src="./images/screenshot-stop.png"/><br/>'
+                     + 'Bei Klick/Ber&uuml;hrung der Abfahrtsangabe wird die Uhrzeit sowie ggf. auch die Versp&auml;tung dargestellt.<br/>'
                      // + 'Bei Klick auf "Linien hervorheben" werden alle Linien, die diese Haltestelle bedienen, hervorgehoben, so erkennen Sie schnell die dortigen Direktverbindungen.<br/>'
                      // + '[Sie können sich ebenfalls einen Aushang wie von der echten Haltestelle gewohnt im PDF-Format ausdrucken.] Bei großen Haltestellen finden Sie hier auch die Haltestellenumgebungspläne im PDF-Format. Ebenfalls sind im Fenster die Liniennummern anklickbar (siehe Abschnitt hierunter).<br/>[Screenshot Linie angeklickt (einzeln)]<br/>'
                      + '<hr/>Auf <a target="_blank" href="https://www.strassenbahn-hagen.de/fahrplaene-strecken/liniennetzplaene-tag-und-nachtnetz.html">dieser</a> Seite k&ouml;nnen Sie sich die Netzpl&auml;ne im PDF-Format herunterladen.<br/>'
