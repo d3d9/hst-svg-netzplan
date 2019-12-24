@@ -208,7 +208,7 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                         let _uhrzString = _d.getHours().toString().padStart(2, '0') + ":" + _d.getMinutes().toString().padStart(2, '0');
                         _abf.dataset.tooltip = "lt. Fahrplan " + _uhrzString;
                         _abf.setAttribute("aria-haspopup", true);
-                        if (dep.realtime) {
+                        if (dep.realtime && !dep.cancelled) {
                             _abf.dataset.tooltip += ", heute " + (dep.delay ? ((dep.delay > 0 ? "+" : "") + dep.delay) : "pünktlich");
                         }
                     }
