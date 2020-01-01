@@ -202,6 +202,7 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                         _ziel.classList.add("earlyterm");
                         _ziel.dataset.tooltip = "lt. Fahrplan bis " + dep.direction_planned;
                         _ziel.setAttribute("aria-haspopup", true);
+                        if (di == 0) _ziel.classList.add("tooltip-bottom");
                     }
                     if (dep.disp_countdown <= 60 || dep.realtime) {
                         let _d = new Date(dep.deptime_planned);
@@ -223,6 +224,7 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                         let _d = new Date(dep.deptime);
                         _abf.innerHTML = _d.getHours().toString().padStart(2, '0') + ":" + _d.getMinutes().toString().padStart(2, '0');
                     }
+                    if (di == 0 && _abf.dataset.tooltip) _abf.classList.add("tooltip-bottom");
 
                     if (dep.realtime) {
                         if (dep.delay <= 2) {
