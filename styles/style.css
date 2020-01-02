@@ -570,6 +570,7 @@ g.transl.stop > g:not(.bficon) {
   color: #fff;
   content: attr(data-tooltip);
   font-size: small;
+  text-align: center;
   line-height: 1.2;
 }
 
