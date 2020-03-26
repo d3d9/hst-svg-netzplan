@@ -820,6 +820,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     mymap.addControl(htmlLegend);
 
+    let boxmessage = mymap._container.dataset.msg;
+    if (!!boxmessage) {
+        let msgbox = L.control.messagebox({timeout: 86400}).addTo(mymap);
+        msgbox.show(boxmessage);
+    }
+
     let zentrierenIconHTML = '<svg style="width: 100%; height: 100%;" width="3.0606mm" height="3.0857mm" version="1.1" viewBox="0 0 3.0606 3.0857" xmlns="http://www.w3.org/2000/svg"><g transform="translate(2.5226 .68005)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/><g transform="matrix(-1 0 0 1 -1.9846 0)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/></g><g transform="matrix(1 0 0 -1 0 1.7256)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/></g><g transform="rotate(180 -.99231 .86278)"><path transform="rotate(45 -1.5702 .27236)" d="m-0.9393 0.27236-0.94636 0.54638v-0.54638-0.54638l0.47318 0.27319z"/><rect transform="rotate(45)" x="-2.1831" y="1.1066" width="1.2988" height=".39255" rx=".19628" ry=".19628"/></g></g></svg>';
     L.easyButton(zentrierenIconHTML, function(btn, map){
         map.fitBounds(svgElementBounds);

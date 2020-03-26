@@ -124,6 +124,22 @@ html, body {
 	color: #0078A8;
 }
 
+.leaflet-control-messagebox {
+	display: none;
+    font-family: 'Fira Sans';
+    font-size: larger;
+	border: 2px solid rgba(255,0,0,0.6);
+    border-radius: 4px;
+	background-color: white;
+	padding: 5px 8px;
+}
+
+@media (max-width: 579px) {
+    .leaflet-control-messagebox{
+        font-size: unset;
+    }
+}
+
 .transl:not(.stoptext):not(.stop):not(.animate-flicker) {
     opacity: 0.2 !important;
 }
