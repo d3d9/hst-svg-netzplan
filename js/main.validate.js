@@ -16,7 +16,7 @@ function svgValidate() {
         "stopid": ["stoptext", "stop", /* noch nicht verwendet: */ "lineblob", "infotext"],
         "onlyLineid": ["stop"]
     };
-    let ignoreData = ["oldLatLng"];
+    let ignoreData = ["msg", "oldLatLng"];
 
     console.log("closing any open popups . . .");
     mymap.closePopup();
