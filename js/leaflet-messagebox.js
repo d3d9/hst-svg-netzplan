@@ -31,8 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 L.Control.Messagebox = L.Control.extend({
     options: {
-        position: 'topright',
-        timeout: 3000
+        position: 'topright'
     },
 
     onAdd: function (map) {
@@ -41,19 +40,10 @@ L.Control.Messagebox = L.Control.extend({
         return this._container;
     },
 
-    show: function (message, timeout) {
+    show: function (message) {
         var elem = this._container;
         elem.innerHTML = message;
         elem.style.display = 'block';
-
-        timeout = timeout || this.options.timeout;
-
-        if (typeof this.timeoutID == 'number') {
-            clearTimeout(this.timeoutID);
-        }
-        this.timeoutID = setTimeout(function () {
-            elem.style.display = 'none';
-        }, timeout);
     }
 });
 

@@ -822,7 +822,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let boxmessage = mymap._container.dataset.msg;
     if (!!boxmessage) {
-        let msgbox = L.control.messagebox({timeout: 86400}).addTo(mymap);
+        let msgbox = L.control.messagebox().addTo(mymap);
         msgbox.show(boxmessage);
     }
 
