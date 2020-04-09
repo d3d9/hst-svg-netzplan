@@ -665,7 +665,7 @@ var hstNetzplanStops = {
     'de:05962:3320': {'name': 'Wiblingwerde'},
     'de:05962:3338': {'name': 'Wiblingwerde Über dem Dorfe'},
     'de:05962:3347': {'name': 'Wiblingwerde Harpkestr.'},
-    'de:05962:3348': {'name': 'Wiblingwerde Todtenhelle'},
-    'de:05914:2401': {'name': 'Hagen An der Hütte'},
-    'de:05914:2571': {'name': 'Hagen Asker Str.'}
+    'de:05962:3348': {'name': 'Wiblingwerde Todtenhelle'}
+    // 'de:05914:2401': {'name': 'Hagen An der Hütte'},
+    // 'de:05914:2571': {'name': 'Hagen Asker Str.'}
 }
