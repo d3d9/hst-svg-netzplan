@@ -3,7 +3,7 @@ function svgValidate() {
     let knownClasses = {
         "stop": ["rect", "g", "path"],
         "stoptext": ["text"],
-        "route": ["path"],
+        "route": ["path", "g"],
         "linetext": ["text", "g"],
         "lineblob": ["g"],
         "infotext": ["text", "path", "g", "rect"],
