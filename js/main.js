@@ -797,6 +797,7 @@ document.addEventListener('DOMContentLoaded', function() {
                      + '<hr/>Auf <a target="_blank" href="https://www.strassenbahn-hagen.de/fahrplaene-strecken/liniennetzplaene-tag-und-nachtnetz.html">dieser</a> Seite k&ouml;nnen Sie sich die Netzpl&auml;ne im PDF-Format herunterladen.<br/>'
                      + 'Unter <a target="_blank" href="https://www.xn--mehr-fr-hagen-1ob.de/">mehr-f&uuml;r-hagen.de</a> gibt es weitere Informationen zum neuen Netz der HST.<br/>'
                      + '<br/><hr/><small>Programmierung: <a target="_blank" href="https://d3d9.xyz/">Kevin Arutyunyan</a> | <a target="_blank" href="https://github.com/d3d9/hst-svg-netzplan">Projektseite</a></small><br/><br/>'
+					 + '<br/><hr/><small>Netzplan: Simon Schreckenberg | <a target="_blank" href="https://www.strassenbahn-hagen.de/">Hagener Straßenbahn AG</a></small><br/><br/>'
                 ),
                 style: null
             }]
