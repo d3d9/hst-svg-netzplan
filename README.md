@@ -1,6 +1,6 @@
 # hst-svg-netzplan
 
-Live unter <https://d3d9.xyz/osm/hstsvg/> oder <https://d3d9.github.io/hst-svg-netzplan/>.
+Live unter <https://d3d9.github.io/hst-svg-netzplan/>.
 
 Weitere Details/Planungen folgen.
 
