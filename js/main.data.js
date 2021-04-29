@@ -59,9 +59,6 @@ var hstNetzplanLines = {
     , "535":    { "fg": "#fff", "bg": "#e14c25",
                   "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/535",
                   "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/535.pdf" }
-    , "536":    { "fg": "#fff", "bg": "#7fceef",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/536",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/536.pdf" }
     , "538":    { "fg": "#fff", "bg": "#006cb6",
                   "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/538",
                   "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/538.pdf" }
