@@ -1,194 +1,188 @@
 var hstNetzplanLines = {
       "510":    { "fg": "#fff", "bg": "#b06520",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/510",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/510.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/510-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/510.pdf" }
     , "511":    { "fg": "#fff", "bg": "#15b6b9",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/511",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/511.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/511",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/511.pdf" }
     , "512":    { "fg": "#fff", "bg": "#b06520",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/512",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/512.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/512-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/512.pdf" }
     , "513":    { "fg": "#fff", "bg": "#7f4984",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/513",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/513.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/513-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/513.pdf" }
     , "514":    { "fg": "#fff", "bg": "#f49b00",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/514",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/514.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/514-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/514.pdf" }
     , "515":    { "fg": "#fff", "bg": "#c10004",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/515",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/515.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/515",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/515.pdf" }
     , "516":    { "fg": "#fff", "bg": "#7eaf49",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/516",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/516.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/516-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/516.pdf" }
     , "517":    { "fg": "#fff", "bg": "#619f4e",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/517",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/517.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/517",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/517.pdf" }
     , "518":    { "fg": "#fff", "bg": "#007bc1",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/518",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/518.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/518",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/518.pdf" }
     , "519":    { "fg": "#fff", "bg": "#007bc1",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/519",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/519.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/519-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/519.pdf" }
     , "520":    { "fg": "#fff", "bg": "#e63758",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/520",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/520.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/520",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/520.pdf" }
     , "521":    { "fg": "#fff", "bg": "#df0008",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/521",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/521.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/521-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/521.pdf" }
     , "524":    { "fg": "#fff", "bg": "#a36501",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/524",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/524.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/524-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/524.pdf" }
     , "525":    { "fg": "#fff", "bg": "#df0008",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/525",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/525.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/525-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/525.pdf" }
     , "527":    { "fg": "#fff", "bg": "#7c277d",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/527",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/527.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/527",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/527.pdf" }
     , "528":    { "fg": "#fff", "bg": "#1784c1",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/528",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/528.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/528",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/528.pdf" }
     , "530":    { "fg": "#fff", "bg": "#e60253",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/530",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/530.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/530",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/530.pdf" }
     , "532":    { "fg": "#fff", "bg": "#364a9c",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/532",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/532.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/532",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/532.pdf" }
     , "534":    { "fg": "#fff", "bg": "#567b3e",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/534",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/534.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/534-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/534.pdf" }
     , "535":    { "fg": "#fff", "bg": "#e14c25",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/535",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/535.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/535",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/535.pdf" }
     , "538":    { "fg": "#fff", "bg": "#006cb6",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/538",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/538.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/538-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/538.pdf" }
     , "539":    { "fg": "#fff", "bg": "#897300",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/539",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/539.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/539-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/539.pdf" }
     , "541":    { "fg": "#fff", "bg": "#9c590f",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/541",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/541.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/541",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/541.pdf" }
     , "542":    { "fg": "#fff", "bg": "#71c837",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/542",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/542.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/542-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/542.pdf" }
     , "543":    { "fg": "#fff", "bg": "#f49b00",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/543",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/543.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/543-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/543.pdf" }
     , "SB71":   { "fg": "#fff", "bg": "#15b6b9",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/sb71",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/SB71.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/sb71",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/SB71.pdf" }
     , "SB72":   { "fg": "#fff", "bg": "#0c919c",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/sb72",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/SB72.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/sb72-1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/SB72.pdf" }
     , "NE1":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#ff2a2a", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne1",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE1.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne1",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE1.pdf" }
     , "NE2":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#ff6600", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne2",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE2.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne2",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE2.pdf" }
     , "NE3":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#000", "bg": "#ffcc00", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne3",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE3.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne3",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE3.pdf" }
     , "NE4":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#2ca02c", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne4",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE4.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne4",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE4.pdf" }
     , "NE5":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#5f8dd3", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne5",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE5.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne5",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE5.pdf" }
     , "NE6":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#7137c8", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne6",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE6.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne6",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE6.pdf" }
     , "NE7":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#a05a2c", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne7",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE7.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne7",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE7.pdf" }
     , "NE9":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#800080", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne9",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE9.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne9",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE9.pdf" }
     , "NE19":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#a02c2c", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne19",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE19.pdf" }
-    , "NE22":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#006cb6", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne22",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE22.pdf" }
-    , "NE31":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#803300", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne31",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE31.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne19",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE19.pdf" }
     , "NE32":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#364a9c", */
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/nachtbuslinien/ne32",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/NE32.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne32",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/NE32.pdf" }
     , "1":      { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/1",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/1.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/1",
+                  "pdf": "https://www.mvg-online.de/fileadmin/user_upload/user_upload/Dokumente/Fahrplaene/Linie001.pdf" }
     , "9":      { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/9",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/9.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/9",
+                  "pdf": "https://www.mvg-online.de/fileadmin/user_upload/user_upload/Dokumente/Fahrplaene/Linie009.pdf" }
     , "57":     { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/57",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/57.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/57",
+                  "pdf": "https://www.mvg-online.de/fileadmin/user_upload/user_upload/Dokumente/Fahrplaene/Linie057.pdf" }
     , "84":     { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/84",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/84-1-2.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/84",
+                  "pdf": "https://www.mvg-online.de/fileadmin/user_upload/user_upload/Dokumente/Fahrplaene/Linie084.pdf" }
     , "376":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/376",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/376-20191215.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/376",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/376.pdf" }
     , "432":    { "fg": "#fff", "bg": "#999999",
-                  "pdf": "https://www.bus-und-bahn.de/43616.cbin" }
+                  "pdf": "https://www.bus-und-bahn.de/fileadmin/user_upload/download-center/fahrplaene/bus/432_hoerde_-_syburg.pdf" }
     , "442":    { "fg": "#fff", "bg": "#999999",
-                  "pdf": "https://www.bus-und-bahn.de/43626.cbin" }
+                  "pdf": "https://www.bus-und-bahn.de/fileadmin/user_upload/download-center/fahrplaene/bus/442_hoerde_-_syburg.pdf" }
     , "523":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/523",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/523.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/523",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/523.pdf" }
     , "529":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/529",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/529.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/529",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/529.pdf" }
     , "553":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/553",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/553.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/553",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/553.pdf" }
     , "555":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/555",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/555.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/555",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/555.pdf" }
     , "556":    { "fg": "#fff", "bg": "#999999",
-                  "pdf": "http://www.ver-kehr.de/34392.cbin" }
+                  "pdf": "https://ver-kehr.de/wp-content/uploads/2020/11/556_beide.pdf" }
     , "591":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/591",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/Linie_591_20191215.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/591",
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/591.pdf" }
     , "594":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://xn--mehr-fr-hagen-1ob.de/linien/buslinien/594",
-                  "pdf": "https://xn--mehr-fr-hagen-1ob.de/fileadmin//user_upload/Linien/Linie_594_20191215.pdf" }
+                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/594",
+                  "pdf": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/594" }
     , "S5":     { "fg": "#fff", "bg": "#619f4e",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/S-Bahn_Linienplaene/S5.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/S-Bahn_Linienplaene_2021/S5.pdf" }
     , "S8":     { "fg": "#fff", "bg": "#619f4e",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/S-Bahn_Linienplaene/S8.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/S-Bahn_Linienplaene_2021/S8.pdf" }
     , "S9":     { "fg": "#fff", "bg": "#619f4e",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/S-Bahn_Linienplaene/S9.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/S-Bahn_Linienplaene_2021/S9.pdf" }
     , "RE4":    { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE4.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE4.pdf" }
     , "RE7":    { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE7.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE7.pdf" }
     , "RE13":   { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE13.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE13.pdf" }
     , "RE16":   { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE16.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE16.pdf" }
     , "RE17":   { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RE_Linienplaene/RE17.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE17.pdf" }
     , "RB40":   { "fg": "#fff", "bg": "#40c1f3",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RB_Linienplaene/RB40.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RB_Linienplaene_2021/RB40.pdf" }
     , "RB52":   { "fg": "#fff", "bg": "#40c1f3",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RB_Linienplaene/RB52.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RB_Linienplaene_2021/RB52.pdf" }
     , "RB91":   { "fg": "#fff", "bg": "#40c1f3",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/RB_Linienplaene/RB91.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RB_Linienplaene_2021/RB91.pdf" }
 }
 
 var hstNetzplanStops = {
     'de:05913:460': {'name': 'Dortmund Syburg'},
     'de:05914:2001': {'name': 'Hagen Marktbrücke'},
     'de:05914:2002': {'name': 'Hagen Markt'},
-    'de:05914:2003': {'name': 'Hagen Stadtmitte/Volme Galerie', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Stadtmitte.pdf'},
+    'de:05914:2003': {'name': 'Hagen Stadtmitte/Volme Galerie', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Stadtmitte.pdf'},
     'de:05914:2004': {'name': 'Hagen Volkspark'},
     'de:05914:2005': {'name': 'Hagen Theater'},
-    'de:05914:2006': {'name': 'Hagen Schwenke', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Schwenke.pdf'},
-    'de:05914:2007': {'name': 'Hagen Hauptbahnhof', 'radbox': true, 'p_r': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Hbf.pdf'},
-    'de:05914:2008': {'name': 'Hagen Altenhg. Brücke', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Altenhagener-Bruecke.pdf'},
+    'de:05914:2006': {'name': 'Hagen Schwenke', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Schwenke.pdf'},
+    'de:05914:2007': {'name': 'Hagen Hauptbahnhof', 'radbox': true, 'p_r': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Hagen-Hbf.pdf'},
+    'de:05914:2008': {'name': 'Hagen Altenhg. Brücke', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Altenhagener-Bruecke.pdf'},
     'de:05914:2009': {'name': 'Hagen St-Josefs-Kirche'},
     'de:05914:2010': {'name': 'Hagen Brüderstr.'},
     'de:05914:2011': {'name': 'Hagen Friedensstr.'},
@@ -196,11 +190,11 @@ var hstNetzplanStops = {
     'de:05914:2013': {'name': 'Hagen Boeler Str.'},
     'de:05914:2014': {'name': 'Hagen Siedlerstr. HVG'},
     'de:05914:2015': {'name': 'Hagen Ginsterheide'},
-    'de:05914:2016': {'name': 'Hagen Loxbaum', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Loxbaum.pdf'},
+    'de:05914:2016': {'name': 'Hagen Loxbaum', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Loxbaum.pdf'},
     'de:05914:2017': {'name': 'Hagen Kapellenstr.'},
     'de:05914:2018': {'name': 'Hagen Stennesufer'},
     'de:05914:2019': {'name': 'Hagen Helfer Str.'},
-    'de:05914:2020': {'name': 'Hagen Boele Markt', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2020_06/HUP-Boele.pdf'},
+    'de:05914:2020': {'name': 'Hagen Boele Markt', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Boele-Markt.pdf'},
     'de:05914:2021': {'name': 'Hagen Boloh'},
     'de:05914:2022': {'name': 'Hagen Bolohstr.'},
     'de:05914:2023': {'name': 'Hagen Haferkamp'},
@@ -215,7 +209,7 @@ var hstNetzplanStops = {
     'de:05914:2033': {'name': 'Hagen Wehringhauser Str.'},
     'de:05914:2035': {'name': 'Hagen Isenbergstr.'},
     'de:05914:2036': {'name': 'Hagen Henrichsiepen'},
-    'de:05914:2037': {'name': 'Hagen Haspe Zentrum', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Haspe.pdf'},
+    'de:05914:2037': {'name': 'Hagen Haspe Zentrum', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Haspe.pdf'},
     'de:05914:2038': {'name': 'Hagen Niederhaspe'},
     'de:05914:2039': {'name': 'Hagen Kölner Str.'},
     'de:05914:2040': {'name': 'Hagen Grundschötteler Str.'},
@@ -237,8 +231,8 @@ var hstNetzplanStops = {
     'de:05914:2056': {'name': 'Hagen Kornstr.'},
     'de:05914:2057': {'name': 'Hagen Louise-Märcker-Str.'},
     'de:05914:2058': {'name': 'Hagen Quambusch'},
-    'de:05914:2059': {'name': 'Hagen Hohenlimburg Bf', 'radbox': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2020_06/HUP-Hohenlimburg.pdf'},
-    'de:05914:2060': {'name': 'Hagen Hohenlimburg Mitte', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Hohenlimburg-Mitte.pdf'},
+    'de:05914:2059': {'name': 'Hagen Hohenlimburg Bf', 'radbox': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Hohenlimburg-Bf.pdf'},
+    'de:05914:2060': {'name': 'Hagen Hohenlimburg Mitte', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Hohenlimburg-Mitte.pdf'},
     'de:05914:2061': {'name': 'Hagen Lennebad'},
     'de:05914:2062': {'name': 'Hagen Elsey Krankenhaus'},
     'de:05914:2063': {'name': 'Hagen Elsey Post'},
@@ -250,7 +244,7 @@ var hstNetzplanStops = {
     'de:05914:2069': {'name': 'Hagen Reh/Lenne Arena'},
     'de:05914:2070': {'name': 'Hagen Alter Reher Weg'},
     'de:05914:2073': {'name': 'Hagen Grote'},
-    'de:05914:2074': {'name': 'Hagen Landgericht', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Landgericht.pdf'},
+    'de:05914:2074': {'name': 'Hagen Landgericht', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Landgericht.pdf'},
     'de:05914:2075': {'name': 'Hagen Emilienplatz'},
     'de:05914:2076': {'name': 'Hagen Eilperfeld'},
     'de:05914:2077': {'name': 'Hagen Metzer Str.'},
@@ -263,7 +257,7 @@ var hstNetzplanStops = {
     'de:05914:2084': {'name': 'Hagen Luisenstr.'},
     'de:05914:2085': {'name': 'Hagen Franzstr.'},
     'de:05914:2086': {'name': 'Hagen Buntebachstr.'},
-    'de:05914:2087': {'name': 'Hagen Oberhagen', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Oberhagen.pdf'},
+    'de:05914:2087': {'name': 'Hagen Oberhagen', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Oberhagen-Bf.pdf'},
     'de:05914:2088': {'name': 'Hagen Eckeseyer Brücke'},
     'de:05914:2089': {'name': 'Hagen Eicken'},
     'de:05914:2091': {'name': 'Hagen Fuhrparkstr.'},
@@ -273,7 +267,7 @@ var hstNetzplanStops = {
     'de:05914:2095': {'name': 'Hagen Weststr.'},
     'de:05914:2096': {'name': 'Hagen Hartmannstr.'},
     'de:05914:2097': {'name': 'Hagen Wittekindstr.'},
-    'de:05914:2098': {'name': 'HA-Vorhalle Mitte', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2020_06/HUP-Vorhalle.pdf'},
+    'de:05914:2098': {'name': 'HA-Vorhalle Mitte', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Vorhalle-Mitte.pdf'},
     'de:05914:2099': {'name': 'Hagen In der Imke'},
     'de:05914:2100': {'name': 'Hagen Untere Lindenstr.'},
     'de:05914:2101': {'name': 'Hagen Sporbecker Weg'},
@@ -311,12 +305,12 @@ var hstNetzplanStops = {
     'de:05914:2137': {'name': 'Hagen Lennhof'},
     'de:05914:2138': {'name': 'Hagen Buschmühle'},
     'de:05914:2141': {'name': 'Hagen Osthofstr.'},
-    'de:05914:2142': {'name': 'Hagen Fröbelstr.', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Helfe.pdf'},
+    'de:05914:2142': {'name': 'Hagen Fröbelstr.', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Helfe.pdf'},
     'de:05914:2143': {'name': 'Hagen Auf dem Kuhl'},
     'de:05914:2144': {'name': 'Hagen Gellertweg'},
     'de:05914:2145': {'name': 'Hagen Birkenstr.'},
     'de:05914:2146': {'name': 'Hagen Lönsweg'},
-    'de:05914:2147': {'name': 'Hagen Boelerheide', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Boelerheide.pdf'},
+    'de:05914:2147': {'name': 'Hagen Boelerheide', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Boelerheide.pdf'},
     'de:05914:2148': {'name': 'Hagen Vereinsstr.'},
     'de:05914:2149': {'name': 'Hagen Grimmestr.'},
     'de:05914:2150': {'name': 'Hagen Hameckestr.'},
@@ -358,7 +352,7 @@ var hstNetzplanStops = {
     'de:05914:2190': {'name': 'Hagen Cuno-Berufskolleg'},
     'de:05914:2192': {'name': 'Hagen Buschmühlenstr.'},
     'de:05914:2193': {'name': 'Hagen Intzestr.'},
-    'de:05914:2194': {'name': 'Hagen Hasper Torhaus', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Haspe.pdf'},
+    'de:05914:2194': {'name': 'Hagen Hasper Torhaus', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Haspe.pdf'},
     'de:05914:2195': {'name': 'Hagen Dickenbruchstr.'},
     'de:05914:2196': {'name': 'Hagen Stolzestr.'},
     'de:05914:2197': {'name': 'Hagen Gabelsberger Str.'},
@@ -369,7 +363,7 @@ var hstNetzplanStops = {
     'de:05914:2202': {'name': 'Hagen Kabeler Str.'},
     'de:05914:2204': {'name': 'Hagen Schieferstr.'},
     'de:05914:2205': {'name': 'Hagen Pieperstr.'},
-    'de:05914:2206': {'name': 'Hagen Helfe Mitte', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Helfe.pdf'},
+    'de:05914:2206': {'name': 'Hagen Helfe Mitte', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Helfe.pdf'},
     'de:05914:2207': {'name': 'Hagen SeniorenzentrumBuschstr.'},
     'de:05914:2208': {'name': 'Hagen Baurothstr.'},
     'de:05914:2209': {'name': 'Hagen Gewerbepark Kückelhausen'},
@@ -412,7 +406,7 @@ var hstNetzplanStops = {
     'de:05914:2265': {'name': 'Hagen Am Großen Feld'},
     'de:05914:2266': {'name': 'Hagen Steltenbergstr.'},
     'de:05914:2279': {'name': 'Hagen FernUniversität'},
-    'de:05914:2280': {'name': 'Hagen Tondernstr.', 'p_r': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Tondernstr.pdf'},
+    'de:05914:2280': {'name': 'Hagen Tondernstr.', 'p_r': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Tondernstr.pdf'},
     'de:05914:2282': {'name': 'Hagen Stirnband'},
     'de:05914:2283': {'name': 'Hagen Zeppelinweg'},
     'de:05914:2289': {'name': 'Hagen Niedernhofstr.'},
@@ -442,7 +436,7 @@ var hstNetzplanStops = {
     'de:05914:2316': {'name': 'Hagen Fachhochschule Südwestf.'},
     'de:05914:2317': {'name': 'Hagen Bettermannshof'},
     'de:05914:2318': {'name': 'Hagen Bülowstr.'},
-    'de:05914:2321': {'name': 'Hagen Nordstr.', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Nordstr.pdf'},
+    'de:05914:2321': {'name': 'Hagen Nordstr.', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Nordstr.pdf'},
     'de:05914:2322': {'name': 'Hagen Ischeland'},
     'de:05914:2323': {'name': 'Hagen Blumenstr.'},
     'de:05914:2324': {'name': 'Hagen Hermannstr.'},
@@ -518,7 +512,7 @@ var hstNetzplanStops = {
     'de:05914:2407': {'name': 'Hagen Roter Hirsch'},
     'de:05914:2408': {'name': 'Hagen Am Damm'},
     'de:05914:2409': {'name': 'Hagen Innsbrucker Str.'},
-    'de:05914:2410': {'name': 'Hagen Rathaus an der Volme', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Rathaus-an-der-Volme.pdf'},
+    'de:05914:2410': {'name': 'Hagen Rathaus an der Volme', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Rathaus.pdf'},
     'de:05914:2411': {'name': 'Hagen Silscheder Str.'},
     'de:05914:2412': {'name': 'Hagen Werkzeugstr.'},
     'de:05914:2414': {'name': 'Hagen Erlhagen'},
@@ -529,7 +523,7 @@ var hstNetzplanStops = {
     'de:05914:2423': {'name': 'Hagen Konrad-Adenauer-Ring'},
     'de:05914:2430': {'name': 'Hagen Im Erlenbusch'},
     'de:05914:2431': {'name': 'Hagen Grueber'},
-    'de:05914:2432': {'name': 'Hagen Heubing Bf', 'p_r': true, 'radbox': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin/user_upload/fahrplan/Haltestellenskizzen/2019_12/HUP-Heubing-Bf.pdf'},
+    'de:05914:2432': {'name': 'Hagen Heubing Bf', 'p_r': true, 'radbox': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Heubing-Bf.pdf'},
     'de:05914:2433': {'name': 'Hagen Westerbauer Bf'},
     'de:05914:2434': {'name': 'Hagen Wehringhausen'},
     'de:05914:2435': {'name': 'Hagen Vorhalle Bf', 'p_r': true, 'radbox': true},
