@@ -658,7 +658,10 @@ var hstNetzplanStops = {
     'de:05962:3347': {'name': 'Wiblingwerde Harpkestr.'},
     'de:05962:3348': {'name': 'Wiblingwerde Todtenhelle'},
     'de:05914:2240': {'name': 'Hagen Oeger Str.'},
-    'de:05914:2973': {'name': 'Hagen Wasserschloss Werdringen'}
-    // 'de:05914:2401': {'name': 'Hagen An der Hütte'},
+    'de:05914:2973': {'name': 'Hagen Wasserschloss Werdringen'},
+    'de:05914:2401': {'name': 'Hagen An der Hütte'},
+    'de:05914:2332': {'name': 'Hagen Gewerbegebiet Volmarsteiner Str.'}, 
+    'de:05914:2319': {'name': 'Hagen An der Wallburg'},
+    'de:05914:2413': {'name': 'Hagen Grundschule Volmetal'}
     // 'de:05914:2571': {'name': 'Hagen Asker Str.'}
 }
