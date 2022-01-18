@@ -142,35 +142,35 @@ var hstNetzplanLines = {
                   "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/555",
                   "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/555.pdf" }
     , "556":    { "fg": "#fff", "bg": "#999999",
-                  "pdf": "https://ver-kehr.de/wp-content/uploads/2020/11/556_beide.pdf" }
+                  "pdf": "https://ver-kehr.de/wp-content/uploads/2022/01/Fahrplan-Linie-556.pdf" }
     , "591":    { "fg": "#fff", "bg": "#999999",
                   "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/591",
                   "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/591.pdf" }
     , "594":    { "fg": "#fff", "bg": "#999999",
                   "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/594",
-                  "pdf": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/594" }
+                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/594.pdf" }
     , "S5":     { "fg": "#fff", "bg": "#619f4e",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/S-Bahn_Linienplaene_2021/S5.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/S-Bahn_Linienplaene_2022/S5.pdf" }
     , "S8":     { "fg": "#fff", "bg": "#619f4e",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/S-Bahn_Linienplaene_2021/S8.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/S-Bahn_Linienplaene_2022/S8.pdf" }
     , "S9":     { "fg": "#fff", "bg": "#619f4e",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/S-Bahn_Linienplaene_2021/S9.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/S-Bahn_Linienplaene_2022/S9.pdf" }
     , "RE4":    { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE4.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE4.pdf" }
     , "RE7":    { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE7.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE7.pdf" }
     , "RE13":   { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE13.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE13.pdf" }
     , "RE16":   { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE16.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE16.pdf" }
     , "RE17":   { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RE_Linienplaene_2021/RE17.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE17.pdf" }
     , "RB40":   { "fg": "#fff", "bg": "#40c1f3",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RB_Linienplaene_2021/RB40.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RB-Linienplaene_2022/RB40.pdf" }
     , "RB52":   { "fg": "#fff", "bg": "#40c1f3",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RB_Linienplaene_2021/RB52.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RB-Linienplaene_2022/RB52.pdf" }
     , "RB91":   { "fg": "#fff", "bg": "#40c1f3",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/bild/fahrplan_und_mobilitaet/Stadt-_Linien-_und_Netzfahrplaene/RB_Linienplaene_2021/RB91.pdf" }
+                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RB-Linienplaene_2022/RB91.pdf" }
 }
 
 var hstNetzplanStops = {
