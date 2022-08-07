@@ -257,7 +257,8 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                         sumH += _maxH;
                         // 35 und 2: siehe style 1. row, row-gap
                         if (di == 4) {
-                            deps.style["height"] = sumH + 35 + 2*(di+1);
+                            let newHeight = sumH + 35 + 2*(di+1);
+                            deps.style["height"] = newHeight + "px";
                         }
                     }
                     noDepsShown = false;
