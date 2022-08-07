@@ -31,6 +31,7 @@ html, body {
     font-family: 'Fira Sans';
     width: unset;
     max-height: 440px;
+    overflow-x: hidden;
 }
 
 @media (min-height: 600px) and (max-height: 699px) {
