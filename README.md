@@ -29,8 +29,8 @@ Zukünftig sollte dies besser anders geschehen, bestenfalls ohne Umweg direkt mi
 
 - __Haltestelle__
   - Objektarten:
-    - __Rect__ <small>(Haltestellenblobb)</small>
-    - __Gruppe__ <small>(Falls Haltestellenblobb in sich Arrows usw. hat - bei __Bahnhofsicons__ dazu noch __class=bficons__ auf der __Unter__-gruppe!)</small>
+    - __Rect__, __Circle__ <small>(Haltestellenblobb)</small>
+    - __Gruppe__ <small>(Falls Haltestellenblobb in sich Arrows usw. hat - bei __Bahnhofsicons__ dazu noch __class=bficon__ auf der __Unter__-gruppe und __class=bfback__ auf dem dazugehörigen Hintergrundcircle!)</small>
     - __Path__ <small>(Verbindungslinie)</small>
     - Wichtig: __Path__ gibt es auch als Haltestellenblobb in Gruppe (Stadtmitte)
   - __class=stop__
@@ -70,6 +70,16 @@ Zukünftig sollte dies besser anders geschehen, bestenfalls ohne Umweg direkt mi
   - Datenattribute:
     - __data-lineid__
     - <small>_data-stopid der jeweiligen Haltestelle, falls vorhanden? -- erstmal unwichtig_</small>
+
+- __Point of Interest (innerhalb der Kartenansicht)__
+  - Objektart: __Gruppe__, ...
+  - __class=poi__
+  - Datenattribute:
+    - __data-lineeid__
+    - weitere später...
+
+- __Point of Interest (in der Tabelle)__ -- Todo. Soll zum POI springen
+- __Haltestellenreferenz (bspw. in der POI-Tabelle)__ -- Todo. Soll zur Haltestelle springen
 
 
 __Code, um die originale svg kleiner zu machen:__  

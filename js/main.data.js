@@ -1,191 +1,267 @@
 var hstNetzplanLines = {    
       "510":    { "fg": "#fff", "bg": "#b06520",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/510",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/510.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/510",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/510.pdf" }
     , "511":    { "fg": "#fff", "bg": "#15b6b9",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/511",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/511.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/511",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/511.pdf" }
     , "512":    { "fg": "#fff", "bg": "#b06520",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/512",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/512.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/512",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/512.pdf" }
     , "513":    { "fg": "#fff", "bg": "#7f4984",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/513",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/513.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/513",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/513.pdf" }
     , "514":    { "fg": "#fff", "bg": "#f49b00",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/514",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/514.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/514",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/514.pdf" }
     , "515":    { "fg": "#fff", "bg": "#c10004",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/515",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/515.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/515",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/515.pdf" }
     , "516":    { "fg": "#fff", "bg": "#7eaf49",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/516",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/516.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/516",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/516.pdf" }
     , "517":    { "fg": "#fff", "bg": "#619f4e",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/517",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/517.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/517",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/517.pdf" }
     , "518":    { "fg": "#fff", "bg": "#007bc1",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/518",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/518.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/518",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/518.pdf" }
     , "519":    { "fg": "#fff", "bg": "#007bc1",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/519",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/519.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/519",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/519.pdf" }
     , "520":    { "fg": "#fff", "bg": "#e63758",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/520",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/520.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/520",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/520.pdf" }
     , "521":    { "fg": "#fff", "bg": "#df0008",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/521",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/521.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/521",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/521.pdf" }
     , "524":    { "fg": "#fff", "bg": "#a36501",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/524",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/524.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/524",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/524.pdf" }
     , "525":    { "fg": "#fff", "bg": "#df0008",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/525",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/525.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/525",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/525.pdf" }
     , "527":    { "fg": "#fff", "bg": "#7c277d",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/527",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/527.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/527",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/527.pdf" }
     , "528":    { "fg": "#fff", "bg": "#1784c1",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/528",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/528.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/528",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/528.pdf" }
     , "530":    { "fg": "#fff", "bg": "#e60253",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/530",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/530.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/530",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/530.pdf" }
     , "532":    { "fg": "#fff", "bg": "#364a9c",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/532",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/532.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/532",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/532.pdf" }
     , "534":    { "fg": "#fff", "bg": "#567b3e",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/534",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/534.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/534",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/534.pdf" }
     , "535":    { "fg": "#fff", "bg": "#e14c25",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/535",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/535.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/535",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/535.pdf" }
     , "538":    { "fg": "#fff", "bg": "#006cb6",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/538",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/538.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/538",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/538.pdf" }
     , "539":    { "fg": "#fff", "bg": "#897300",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/539",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/539.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/539",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/539.pdf" }
     , "541":    { "fg": "#fff", "bg": "#9c590f",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/541",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/541.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/541",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/541.pdf" }
     , "542":    { "fg": "#fff", "bg": "#71c837",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/542",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/542.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/542",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/542.pdf" }
     , "543":    { "fg": "#fff", "bg": "#f49b00",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/543",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/543.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/543",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/543.pdf" }
     , "SB71":   { "fg": "#fff", "bg": "#15b6b9",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/sb71",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/SB71.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/sb71",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/SB71.pdf" }
     , "SB72":   { "fg": "#fff", "bg": "#0c919c",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/sb72",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/SB72.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/sb72",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/SB72.pdf" }
     , "NE1":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#ff2a2a", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne1",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE1.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne1",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE1.pdf" }
     , "NE2":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#ff6600", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne2",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/x22/Nachtexpresse/NE2.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne2",
+                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x22/Nachtexpresse/NE2.pdf" }
     , "NE3":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#000", "bg": "#ffcc00", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne3",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE3.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne3",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE3.pdf" }
     , "NE4":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#2ca02c", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne4",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE4.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne4",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE4.pdf" }
     , "NE5":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#5f8dd3", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne5",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE5.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne5",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE5.pdf" }
     , "NE6":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#7137c8", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne6",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE6.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne6",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE6.pdf" }
     , "NE7":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#a05a2c", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne7",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE7.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne7",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE7.pdf" }
     , "NE9":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#800080", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne9",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE9.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne9",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE9.pdf" }
     , "NE19":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#a02c2c", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne19",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE19.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne19",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE19.pdf" }
     , "NE31":   { "fg": "#803300", "bg": "#000", /* "fg": "#fff", "bg": "#364a9c", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne31",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE31.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne31",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE31.pdf" }
     , "NE32":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#364a9c", */
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/nachtexpress-linien/ne32",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE32.pdf" }
-    , "1":      { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/1",
-                  "pdf": "https://www.mvg-online.de/fileadmin/user_upload/user_upload/Dokumente/Fahrplaene/Linie001.pdf" }
-    , "9":      { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/9",
-                  "pdf": "https://www.mvg-online.de/fileadmin/user_upload/user_upload/Dokumente/Fahrplaene/Linie009.pdf" }
-    , "57":     { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/57",
-                  "pdf": "https://www.mvg-online.de/fileadmin/user_upload/user_upload/Dokumente/Fahrplaene/Linie057.pdf" }
-    , "84":     { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/84",
-                  "pdf": "https://www.mvg-online.de/fileadmin/user_upload/user_upload/Dokumente/Fahrplaene/Linie084.pdf" }
-    , "376":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/376",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/376.pdf" }
-    , "432":    { "fg": "#fff", "bg": "#999999",
-                  "pdf": "https://www.bus-und-bahn.de/fileadmin/user_upload/download-center/fahrplaene/bus/432_hoerde_-_syburg.pdf" }
-    , "442":    { "fg": "#fff", "bg": "#999999",
-                  "pdf": "https://www.bus-und-bahn.de/fileadmin/user_upload/download-center/fahrplaene/bus/442_hoerde_-_syburg.pdf" }
-    , "523":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/523",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/523.pdf" }
-    , "529":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/529",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/529.pdf" }
-    , "553":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/553",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/553.pdf" }
-    , "555":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/555",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/555.pdf" }
-    , "556":    { "fg": "#fff", "bg": "#999999",
-                  "pdf": "https://ver-kehr.de/wp-content/uploads/2022/01/Fahrplan-Linie-556.pdf" }
-    , "591":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/591",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/591.pdf" }
-    , "594":    { "fg": "#fff", "bg": "#999999",
-                  "info": "https://www.strassenbahn-hagen.de/fahrplan/linien/buslinien/594",
-                  "pdf": "https://www.strassenbahn-hagen.de/fileadmin//user_upload/Linien/594.pdf" }
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne32",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE32.pdf" }
+    , "T1":      { "fg": "#fff", "bg": "#261f5b",
+                  "phone": true,
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/taxibuslinien/t1",
+                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x22/Taxibus/T1.pdf" }
+    , "T2":      { "fg": "#fff", "bg": "#261f5b",
+                  "phone": true,
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/taxibuslinien/t2",
+                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x22/Taxibus/T2.pdf" }
+    , "T4":      { "fg": "#fff", "bg": "#261f5b",
+                  "phone": true,
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/taxibuslinien/t4",
+                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x22/Taxibus/T4.pdf" }
+    , "1":      { "fg": "#fff", "bg": "#6246a6",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/1",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/1.pdf" }
+    , "9":      { "fg": "#fff", "bg": "#ed0f80",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/9",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/9.pdf" }
+    , "49":     { "fg": "#fff", "bg": "#484226",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/49.pdf" }
+    , "57":     { "fg": "#fff", "bg": "#3b7cc8",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/57",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/57.pdf" }
+    , "84":     { "fg": "#fff", "bg": "#31807c",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/84",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/84.pdf" }
+    , "86":     { "fg": "#fff", "bg": "#a59e2f",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/86.pdf" }
+    , "376":    { "fg": "#fff", "bg": "#37abc8",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/376",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/376.pdf" }
+    , "376E":   { "use": "376" }
+    , "432":    { "fg": "#fff", "bg": "#b178c3",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/432.pdf" }
+    , "442":    { "fg": "#fff", "bg": "#80beea",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/442.pdf" }
+    , "523":    { "fg": "#fff", "bg": "#348ab8",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/523",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/523.pdf" }
+    , "529":    { "fg": "#fff", "bg": "#df992c",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/529",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/529.pdf" }
+    , "550":    { "fg": "#fff", "bg": "#b97caf",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/550.pdf" }
+    , "551":    { "fg": "#fff", "bg": "#969000",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/551.pdf" }
+    , "552":    { "fg": "#fff", "bg": "#795895",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/552.pdf" }
+    , "553":    { "fg": "#fff", "bg": "#e61d64",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/553",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/553.pdf" }
+    , "555":    { "fg": "#fff", "bg": "#e61d64",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/555",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/555.pdf" }
+    , "556":    { "fg": "#fff", "bg": "#d26e99",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/556.pdf" }
+    , "563":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/563.pdf" }
+    , "564":    { "fg": "#fff", "bg": "#016f4f",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/564.pdf" }
+    , "570":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/570.pdf" }
+    , "571":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/571.pdf" }
+    , "573":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/573.pdf" }
+    , "574":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/574.pdf" }
+    , "575":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/575.pdf" }
+    , "581":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/581.pdf" }
+    , "582":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/582.pdf" }
+    , "584":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/584.pdf" }
+    , "585":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/585.pdf" }
+    , "591":    { "fg": "#fff", "bg": "#5f5fb5",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/591",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/591.pdf" }
+    , "592":    { "fg": "#fff", "bg": "#49444d",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/592.pdf" }
+    , "593":    { "fg": "#fff", "bg": "#ef2d40",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/593.pdf" }
+    , "594":    { "fg": "#fff", "bg": "#6c90d2",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/594",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/594.pdf" }
+    , "595":    { "fg": "#fff", "bg": "#8c4d5d",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/595.pdf" }
+    , "599":    { "fg": "#fff", "bg": "#999999",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/599.pdf" }
+    , "SB38":    { "fg": "#fff", "bg": "#309096",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/SB38.pdf" }
+    , "Bü1-H":    { "fg": "#fff", "bg": "#999999", // Bürgerbus Herdecke
+                  "override": "Bü1",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Bue1-H.pdf" }
+    , "Bü2-H":    { "fg": "#fff", "bg": "#999999", // Bürgerbus Herdecke
+                  "override": "Bü2",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Bue2-H.pdf" }
+    , "Bü1-W":    { "fg": "#fff", "bg": "#999999", // Bürgerbus Wetter
+                  "override": "Bü1",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Bue1-W.pdf" }
+    , "Bü2-W":    { "fg": "#fff", "bg": "#999999", // Bürgerbus Wetter
+                  "override": "Bü2",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Bue2-W.pdf" }
+    , "Bü3-W":    { "fg": "#fff", "bg": "#999999", // Bürgerbus Wetter, fährt auch nach Herdecke
+                  "override": "Bü3",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Bue3-W.pdf" }
+    , "Bü6-W":    { "fg": "#fff", "bg": "#999999", // Bürgerbus Wengern, fährt auch nach Wetter
+                  "override": "Bü6",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Bue6-W.pdf" }
+    , "TB52":    { "fg": "#fff", "bg": "#999999", // Taxibus Gevelsberg - Silschede
+                  "phone": true,
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/TB52.pdf" }
     , "S5":     { "fg": "#fff", "bg": "#619f4e",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/S-Bahn_Linienplaene_2022/S5.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/S5.pdf" }
     , "S8":     { "fg": "#fff", "bg": "#619f4e",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/S-Bahn_Linienplaene_2022/S8.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/S8.pdf" }
     , "S9":     { "fg": "#fff", "bg": "#619f4e",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/S-Bahn_Linienplaene_2022/S9.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/S9.pdf" }
     , "RE4":    { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE4.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RE4.pdf" }
     , "RE7":    { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE7.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RE7.pdf" }
     , "RE13":   { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE13.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RE13.pdf" }
     , "RE16":   { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE16.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RE16.pdf" }
     , "RE17":   { "fg": "#fff", "bg": "#f4731f",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RE-Linienplaene_2022/RE17.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RE17.pdf" }
     , "RB40":   { "fg": "#fff", "bg": "#40c1f3",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RB-Linienplaene_2022/RB40.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RB40.pdf" }
     , "RB52":   { "fg": "#fff", "bg": "#40c1f3",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RB-Linienplaene_2022/RB52.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RB52.pdf" }
     , "RB91":   { "fg": "#fff", "bg": "#40c1f3",
-                  "pdf": "https://www.vrr.de/fileadmin/user_upload/pdf/fahrplan_und_mobilitaet/RB-Linienplaene_2022/RB91.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RB91.pdf" }
 }
 
 var hstNetzplanStops = {
     'de:05913:460': {'name': 'Dortmund Syburg'},
     'de:05914:2001': {'name': 'Hagen Marktbrücke'},
     'de:05914:2002': {'name': 'Hagen Markt'},
-    'de:05914:2003': {'name': 'Hagen Stadtmitte/Volme Galerie', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Stadtmitte-x22.pdf'},
+    'de:05914:2003': {'name': 'Hagen Stadtmitte/Volme Galerie', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Stadtmitte-x22.pdf'},
     'de:05914:2004': {'name': 'Hagen Volkspark'},
     'de:05914:2005': {'name': 'Hagen Theater'},
-    'de:05914:2006': {'name': 'Hagen Schwenke', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Schwenke-x22.pdf'},
-    'de:05914:2007': {'name': 'Hagen Hauptbahnhof', 'radbox': true, 'p_r': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Hagen-Hbf-x22.pdf'},
-    'de:05914:2008': {'name': 'Hagen Altenhg. Brücke', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Altenhagener-Bruecke-x22.pdf'},
+    'de:05914:2006': {'name': 'Hagen Schwenke', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Schwenke-x22.pdf'},
+    'de:05914:2007': {'name': 'Hagen Hauptbahnhof', 'radbox': true, 'p_r': true, 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Hagen-Hbf-x22.pdf'},
+    'de:05914:2008': {'name': 'Hagen Altenhg. Brücke', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Altenhagener-Bruecke-x22.pdf'},
     'de:05914:2009': {'name': 'Hagen St-Josefs-Kirche'},
     'de:05914:2010': {'name': 'Hagen Brüderstr./EDEKA'},
     'de:05914:2011': {'name': 'Hagen Friedensstr.'},
@@ -193,11 +269,11 @@ var hstNetzplanStops = {
     'de:05914:2013': {'name': 'Hagen Boeler Str.'},
     'de:05914:2014': {'name': 'Hagen Siedlerstr. HVG'},
     'de:05914:2015': {'name': 'Hagen Ginsterheide'},
-    'de:05914:2016': {'name': 'Hagen Loxbaum', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Loxbaum-x22.pdf'},
+    'de:05914:2016': {'name': 'Hagen Loxbaum', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Loxbaum-x22.pdf'},
     'de:05914:2017': {'name': 'Hagen Kapellenstr.'},
     'de:05914:2018': {'name': 'Hagen Stennesufer'},
     'de:05914:2019': {'name': 'Hagen Helfer Str.'},
-    'de:05914:2020': {'name': 'Hagen Boele Markt', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Boele-Markt-x22.pdf'},
+    'de:05914:2020': {'name': 'Hagen Boele Markt', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Boele-Markt-x22.pdf'},
     'de:05914:2021': {'name': 'Hagen Boloh'},
     'de:05914:2022': {'name': 'Hagen Bolohstr.'},
     'de:05914:2023': {'name': 'Hagen Haferkamp'},
@@ -212,7 +288,7 @@ var hstNetzplanStops = {
     'de:05914:2033': {'name': 'Hagen Wehringhauser Str.'},
     'de:05914:2035': {'name': 'Hagen Isenbergstr.'},
     'de:05914:2036': {'name': 'Hagen Henrichsiepen'},
-    'de:05914:2037': {'name': 'Hagen Haspe Zentrum', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Haspe-x22.pdf'},
+    'de:05914:2037': {'name': 'Hagen Haspe Zentrum', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Haspe-x22.pdf'},
     'de:05914:2038': {'name': 'Hagen Niederhaspe'},
     'de:05914:2039': {'name': 'Hagen Kölner Str.'},
     'de:05914:2040': {'name': 'Hagen Grundschötteler Str.'},
@@ -234,8 +310,8 @@ var hstNetzplanStops = {
     'de:05914:2056': {'name': 'Hagen Kornstr.'},
     'de:05914:2057': {'name': 'Hagen Louise-Märcker-Str.'},
     'de:05914:2058': {'name': 'Hagen Quambusch'},
-    'de:05914:2059': {'name': 'Hagen Hohenlimburg Bf', 'radbox': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Hohenlimburg-Bf-x22.pdf'},
-    'de:05914:2060': {'name': 'Hagen Hohenlimburg Mitte', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Hohenlimburg-Mitte-x22.pdf'},
+    'de:05914:2059': {'name': 'Hagen Hohenlimburg Bf', 'radbox': true, 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Hohenlimburg-Bf-x22.pdf'},
+    'de:05914:2060': {'name': 'Hagen Hohenlimburg Mitte', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Hohenlimburg-Mitte-x22.pdf'},
     'de:05914:2061': {'name': 'Hagen Lennebad'},
     'de:05914:2062': {'name': 'Hagen Elsey Krankenhaus'},
     'de:05914:2063': {'name': 'Hagen Elsey Post'},
@@ -247,7 +323,7 @@ var hstNetzplanStops = {
     'de:05914:2069': {'name': 'Hagen Reh/Lenne Arena'},
     'de:05914:2070': {'name': 'Hagen Alter Reher Weg'},
     'de:05914:2073': {'name': 'Hagen Grote'},
-    'de:05914:2074': {'name': 'Hagen Landgericht', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Landgericht-x22.pdf'},
+    'de:05914:2074': {'name': 'Hagen Landgericht', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Landgericht-x22.pdf'},
     'de:05914:2075': {'name': 'Hagen Emilienplatz'},
     'de:05914:2076': {'name': 'Hagen Eilperfeld'},
     'de:05914:2077': {'name': 'Hagen Metzer Str.'},
@@ -260,7 +336,7 @@ var hstNetzplanStops = {
     'de:05914:2084': {'name': 'Hagen Luisenstr.'},
     'de:05914:2085': {'name': 'Hagen Franzstr.'},
     'de:05914:2086': {'name': 'Hagen Buntebachstr.'},
-    'de:05914:2087': {'name': 'Hagen Oberhagen', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Oberhagen-Bf-x22.pdf'},
+    'de:05914:2087': {'name': 'Hagen Oberhagen', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Oberhagen-Bf-x22.pdf'},
     'de:05914:2088': {'name': 'Hagen Eckeseyer Brücke'},
     'de:05914:2089': {'name': 'Hagen Eicken'},
     'de:05914:2091': {'name': 'Hagen Fuhrparkstr.'},
@@ -270,7 +346,7 @@ var hstNetzplanStops = {
     'de:05914:2095': {'name': 'Hagen Weststr.'},
     'de:05914:2096': {'name': 'Hagen Hartmannstr.'},
     'de:05914:2097': {'name': 'Hagen Wittekindstr.'},
-    'de:05914:2098': {'name': 'HA-Vorhalle Mitte', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Vorhalle-Mitte-x22.pdf'},
+    'de:05914:2098': {'name': 'HA-Vorhalle Mitte', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Vorhalle-Mitte-x22.pdf'},
     'de:05914:2099': {'name': 'Hagen In der Imke'},
     'de:05914:2100': {'name': 'Hagen Untere Lindenstr.'},
     'de:05914:2101': {'name': 'Hagen Sporbecker Weg'},
@@ -308,12 +384,12 @@ var hstNetzplanStops = {
     'de:05914:2137': {'name': 'Hagen Lennhof'},
     'de:05914:2138': {'name': 'Hagen Buschmühle'},
     'de:05914:2141': {'name': 'Hagen Osthofstr.'},
-    'de:05914:2142': {'name': 'Hagen Fröbelstr.', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Helfe-x22.pdf'},
+    'de:05914:2142': {'name': 'Hagen Fröbelstr.', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Helfe-x22.pdf'},
     'de:05914:2143': {'name': 'Hagen Auf dem Kuhl'},
     'de:05914:2144': {'name': 'Hagen Gellertweg'},
     'de:05914:2145': {'name': 'Hagen Birkenstr.'},
     'de:05914:2146': {'name': 'Hagen Lönsweg'},
-    'de:05914:2147': {'name': 'Hagen Boelerheide', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Boelerheide-x22.pdf'},
+    'de:05914:2147': {'name': 'Hagen Boelerheide', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Boelerheide-x22.pdf'},
     'de:05914:2148': {'name': 'Hagen Vereinsstr.'},
     'de:05914:2149': {'name': 'Hagen Grimmestr.'},
     'de:05914:2150': {'name': 'Hagen Hameckestr.'},
@@ -355,7 +431,7 @@ var hstNetzplanStops = {
     'de:05914:2190': {'name': 'Hagen Cuno-Berufskolleg'},
     'de:05914:2192': {'name': 'Hagen Buschmühlenstr.'},
     'de:05914:2193': {'name': 'Hagen Intzestr.'},
-    'de:05914:2194': {'name': 'Hagen Hasper Torhaus', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Haspe-x22.pdf'},
+    'de:05914:2194': {'name': 'Hagen Hasper Torhaus', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Haspe-x22.pdf'},
     'de:05914:2195': {'name': 'Hagen Dickenbruchstr.'},
     'de:05914:2196': {'name': 'Hagen Stolzestr.'},
     'de:05914:2197': {'name': 'Hagen Gabelsberger Str.'},
@@ -366,7 +442,7 @@ var hstNetzplanStops = {
     'de:05914:2202': {'name': 'Hagen Kabeler Str.'},
     'de:05914:2204': {'name': 'Hagen Schieferstr.'},
     'de:05914:2205': {'name': 'Hagen Pieperstr.'},
-    'de:05914:2206': {'name': 'Hagen Helfe Mitte', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Helfe-x22.pdf'},
+    'de:05914:2206': {'name': 'Hagen Helfe Mitte', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Helfe-x22.pdf'},
     'de:05914:2207': {'name': 'Hagen SeniorenzentrumBuschstr.'},
     'de:05914:2208': {'name': 'Hagen Baurothstr.'},
     'de:05914:2209': {'name': 'Hagen Gewerbepark Kückelhausen'},
@@ -409,7 +485,7 @@ var hstNetzplanStops = {
     'de:05914:2265': {'name': 'Hagen Am Großen Feld'},
     'de:05914:2266': {'name': 'Hagen Steltenbergstr.'},
     'de:05914:2279': {'name': 'Hagen FernUniversität'},
-    'de:05914:2280': {'name': 'Hagen Tondernstr.', 'p_r': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Tondernstr-x22.pdf'},
+    'de:05914:2280': {'name': 'Hagen Tondernstr.', 'p_r': true, 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Tondernstr-x22.pdf'},
     'de:05914:2282': {'name': 'Hagen Stirnband'},
     'de:05914:2283': {'name': 'Hagen Zeppelinweg'},
     'de:05914:2289': {'name': 'Hagen Niedernhofstr.'},
@@ -439,7 +515,7 @@ var hstNetzplanStops = {
     'de:05914:2316': {'name': 'Hagen Fachhochschule Südwestf.'},
     'de:05914:2317': {'name': 'Hagen Bettermannshof'},
     'de:05914:2318': {'name': 'Hagen Bülowstr.'},
-    'de:05914:2321': {'name': 'Hagen Nordstr.', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Nordstr-x22.pdf'},
+    'de:05914:2321': {'name': 'Hagen Nordstr.', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Nordstr-x22.pdf'},
     'de:05914:2322': {'name': 'Hagen Ischeland'},
     'de:05914:2323': {'name': 'Hagen Blumenstr.'},
     'de:05914:2324': {'name': 'Hagen Hermannstr.'},
@@ -515,18 +591,18 @@ var hstNetzplanStops = {
     'de:05914:2407': {'name': 'Hagen Roter Hirsch'},
     'de:05914:2408': {'name': 'Hagen Am Damm'},
     'de:05914:2409': {'name': 'Hagen Innsbrucker Str.'},
-    'de:05914:2410': {'name': 'Hagen Rathaus an der Volme', 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Rathaus-x22.pdf'},
+    'de:05914:2410': {'name': 'Hagen Rathaus an der Volme', 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Rathaus-x22.pdf'},
     'de:05914:2411': {'name': 'Hagen Silscheder Str.'},
     'de:05914:2412': {'name': 'Hagen Werkzeugstr.'},
     'de:05914:2414': {'name': 'Hagen Erlhagen'},
     'de:05914:2417': {'name': 'Hagen Sonntagstr.'},
     'de:05914:2418': {'name': 'Hagen Schönfeld'},
-    'de:05914:2420': {'name': 'Hagen, Rummenohl Mitte'},
+    'de:05914:2420': {'name': 'Hagen Rummenohl Mitte'},
     'de:05914:2422': {'name': 'Hagen Herbeck Denkmal'},
     'de:05914:2423': {'name': 'Hagen Konrad-Adenauer-Ring'},
     'de:05914:2430': {'name': 'Hagen Im Erlenbusch'},
     'de:05914:2431': {'name': 'Hagen Grueber'},
-    'de:05914:2432': {'name': 'Hagen Heubing Bf', 'p_r': true, 'radbox': true, 'umgebung': 'https://www.strassenbahn-hagen.de/fileadmin//user_upload/HUP-Heubing-Bf-x22.pdf'},
+    'de:05914:2432': {'name': 'Hagen Heubing Bf', 'p_r': true, 'radbox': true, 'umgebung': 'https://www.hst-hagen.de/fileadmin//user_upload/HUP-Heubing-Bf-x22.pdf'},
     'de:05914:2433': {'name': 'Hagen Westerbauer Bf'},
     'de:05914:2434': {'name': 'Hagen Wehringhausen'},
     'de:05914:2435': {'name': 'Hagen Vorhalle Bf', 'p_r': true, 'radbox': true},
@@ -652,7 +728,7 @@ var hstNetzplanStops = {
     'de:05954:8087': {'name': 'Gevelsberg Am Schilken'},
     'de:05954:8088': {'name': 'Gevelsberg-Knapp'},
     'de:05954:8720': {'name': 'Gevelsberg Vogelsanger Str.'},
-    'de:05962:1065': {'name': 'Iserl., Oege Umspannwerk'},
+    'de:05962:1065': {'name': 'Iserlohn Oege Umspannwerk'},
     'de:05962:3317': {'name': 'Wiblingwerde Veserde'},
     'de:05962:3318': {'name': 'Wiblingwerde Vogelhenne'},
     'de:05962:3319': {'name': 'Wiblingwerde Wörden'},
@@ -662,9 +738,162 @@ var hstNetzplanStops = {
     'de:05962:3348': {'name': 'Wiblingwerde Todtenhelle'},
     'de:05914:2240': {'name': 'Hagen Oeger Str.'},
     'de:05914:2973': {'name': 'Hagen Wasserschloss Werdringen'},
-    'de:05914:2401': {'name': 'Hagen An der Hütte'},
+    // 'de:05914:2401': {'name': 'Hagen An der Hütte'}, // Umleitung 521, 532, 553, 555 (alt)
     'de:05914:2332': {'name': 'Hagen Gewerbegebiet Volmarsteiner Str.'}, 
     'de:05914:2319': {'name': 'Hagen An der Wallburg'},
-    'de:05914:2413': {'name': 'Hagen Grundschule Volmetal'}
-    // 'de:05914:2571': {'name': 'Hagen Asker Str.'}
+    'de:05914:2413': {'name': 'Hagen Grundschule Volmetal'},
+    // 'de:05914:2571': {'name': 'Hagen Asker Str.'}, // Umleitung 542 (alt)
+    'de:05914:2486': {'name': 'Hagen Lindhaardt', 'taxibus': true},
+    'de:05914:2487': {'name': 'Hagen Auf der Lindhaardt', 'taxibus': true},
+    'de:05914:2527': {'name': 'Hagen In der Oberheide', 'taxibus': true},
+    'de:05914:2748': {'name': 'Hagen Ahmer Weg', 'taxibus': true},
+    'de:05914:2747': {'name': 'Hagen Piepenstockstr.', 'taxibus': true},
+    'de:05914:2760': {'name': 'Hagen Sonnenberg III', 'taxibus': true},
+    'de:05914:2746': {'name': 'Hagen Sonnenberg II', 'taxibus': true},
+    'de:05914:2745': {'name': 'Hagen Sonnenberg I', 'taxibus': true},
+    'de:05914:2759': {'name': 'Hagen Oege', 'taxibus': true},
+    'de:05914:2567': {'name': 'Hagen Kratzkopf', 'taxibus': true},
+    'de:05914:2459': {'name': 'Hagen Ambrocker Weg', 'taxibus': true},
+    'de:05914:2460': {'name': 'Hagen Klinik Ambrock', 'taxibus': true},
+    'de:05954:2251': {'name': 'Herdecke Koenenstr.'},
+    'de:05954:2253': {'name': 'Herdecke Mitte'},
+    'de:05954:2254': {'name': 'Herdecke Kirche'},
+    'de:05954:2267': {'name': 'Herdecke Friedrich-Harkort-Gymn.'},
+    'de:05954:2268': {'name': 'Herdecke Rathaus'},
+    'de:05954:2269': {'name': 'Herdecke Bf'},
+    'de:05954:2270': {'name': 'Herdecke Mozartweg'},
+    'de:05954:2281': {'name': 'Herdecke Attenbergstr.'},
+    'de:05954:2284': {'name': 'Herdecke Goethestr.'},
+    'de:05954:8025': {'name': 'Gevelsberg Rathaus'},
+    'de:05954:8026': {'name': 'Gevelsberg Commerzbank'},
+    'de:05954:8062': {'name': 'Wetter Wetter Loh'},
+    'de:05954:8070': {'name': 'Wetter Grundschöttel'},
+    'de:05954:8072': {'name': 'Wetter Kaiserstr.'},
+    'de:05954:8076': {'name': 'Wetter Gymnasium'},
+    'de:05954:8078': {'name': 'Wetter Oberwengern Bf.'},
+    'de:05954:8079': {'name': 'Wetter Oberwengern'},
+    'de:05954:8080': {'name': 'Wetter Bf.'},
+    'de:05954:8081': {'name': 'Wetter Stadtsaal'},
+    'de:05954:8082': {'name': 'Wetter Harkortsee'},
+    'de:05954:8290': {'name': 'Wetter Freiheit'},
+    'de:05954:8313': {'name': 'Gevelsberg Hbf.'},
+    'de:05954:8318': {'name': 'Wetter An der Kirche'},
+    'de:05954:8320': {'name': 'Wetter Volmarstein Bf.'},
+    'de:05954:8332': {'name': 'Wetter Ruhrstr.'},
+    'de:05954:8340': {'name': 'Wetter Bornstr.'},
+    'de:05954:8342': {'name': 'Wetter Rusche'},
+    'de:05954:8352': {'name': 'Wetter Wolfgang-Reuter-Str.'},
+    'de:05954:8353': {'name': 'Wetter Memelstr.'},
+    'de:05954:8354': {'name': 'Wetter Danziger Str.'},
+    'de:05954:8370': {'name': 'Wetter Sunderweg'},
+    'de:05954:8621': {'name': 'Gevelsberg Lusebrink'},
+    'de:05954:8638': {'name': 'Wetter Am Grünewald'},
+    'de:05954:8751': {'name': 'Wetter Hagener Str.'},
+    'de:05954:8850': {'name': 'Wetter Am Wilshause'},
+    'de:05954:2285': {'name': 'Herdecke Breddestr.'},
+    'de:05954:2286': {'name': 'Herdecke Rosenstr.'},
+    'de:05954:2287': {'name': 'Herdecke Berliner Str.'},
+    'de:05954:2288': {'name': 'Herdecke Nacken'},
+    'de:05954:8217': {'name': 'Breckerfeld Busbahnhof'},
+    'de:05954:8218': {'name': 'Breckerfeld Rathaus'},
+    'de:05954:8219': {'name': 'Breckerfeld Breckerfeld'},
+    'de:05954:8220': {'name': 'Breckerfeld Windmühlencenter'},
+    'de:05954:8221': {'name': 'Breckerfeld Brauck'},
+    'de:05954:8222': {'name': 'Breckerfeld Königsheide'},
+    'de:05954:8282': {'name': 'Gevelsberg Talstr.'},
+    'de:05954:8283': {'name': 'Gevelsberg Poeten'},
+    'de:05954:8284': {'name': 'Gevelsberg Kirchwinkelstr.'},
+    'de:05954:8285': {'name': 'Gevelsberg Hagebölling'},
+    'de:05954:8286': {'name': 'Gevelsberg Hundeicken'},
+    'de:05954:8287': {'name': 'Gevelsberg Bergstr.'},
+    'de:05954:8288': {'name': 'Gevelsberg Haufe'},
+    'de:05954:8289': {'name': 'Gevelsberg Gesundheitszentrum'},
+    'de:05954:8293': {'name': 'Gevelsberg Am Schultenhof'},
+    'de:05954:8294': {'name': 'Breckerfeld Schule'},
+    'de:05954:8295': {'name': 'Wetter Ringstr./Harkortsee'},
+    'de:05954:8296': {'name': 'Wetter Friedrichstr.'},
+    'de:05954:8299': {'name': 'Breckerfeld Eicken'},
+    'de:05954:8300': {'name': 'Breckerfeld Grüne'},
+    'de:05954:8301': {'name': 'Breckerfeld Heide'},
+    'de:05954:8304': {'name': 'Breckerfeld Neuenloh'},
+    'de:05954:8307': {'name': 'Breckerfeld Schaffland'},
+    'de:05954:8309': {'name': 'Breckerfeld Sonnenschein'},
+    'de:05954:8312': {'name': 'Breckerfeld Zurstraße'},
+    'de:05954:8371': {'name': 'Breckerfeld Teichstr.'},
+    'de:05954:8372': {'name': 'Breckerfeld Erlenbruch'},
+    'de:05954:8373': {'name': 'Breckerfeld Wengeberg Penninckw.'},
+    'de:05954:8374': {'name': 'Breckerfeld Am Kreutz'},
+    'de:05954:8375': {'name': 'Breckerfeld Jakobusweg'},
+    'de:05954:8376': {'name': 'Breckerfeld Am Stollen'},
+    'de:05954:2246': {'name': 'Herdecke Herrentisch'},
+    'de:05954:2247': {'name': 'Herdecke Waldfriedhof'},
+    'de:05954:2248': {'name': 'Herdecke Auf den Brennen'},
+    'de:05954:2249': {'name': 'Herdecke Am Sonnenstein'},
+    'de:05954:2250': {'name': 'Herdecke Vinkenbergstr.'},
+    'de:05954:2255': {'name': 'Herdecke Dörken'},
+    'de:05954:2256': {'name': 'Herdecke E-Werk-Mark'},
+    'de:05954:2257': {'name': 'Herdecke Zillertal'},
+    'de:05954:2297': {'name': 'Herdecke Mühlenstr.'},
+    'de:05954:2380': {'name': 'Herdecke Heinrich-Heine-Platz'},
+    'de:05954:2381': {'name': 'Herdecke Wienbergweg'},
+    'de:05954:2382': {'name': 'Herdecke Friedhof'},
+    'de:05954:2674': {'name': 'Breckerfeld Amboßweg'},
+    'de:05954:2675': {'name': 'Breckerfeld Münzstraße'},
+    'de:05954:8001': {'name': 'Ennepetal Voerde'},
+    'de:05954:8002': {'name': 'Ennepetal Voerde Mitte'},
+    'de:05954:8064': {'name': 'Wetter Köhlerstr.'},
+    'de:05954:8065': {'name': 'Wetter Klinik'},
+    'de:05954:8066': {'name': 'Wetter Volmarstein Dorfplatz'},
+    'de:05954:8067': {'name': 'Wetter Hauptstr.'},
+    'de:05954:8068': {'name': 'Wetter Heilkenstr.'},
+    'de:05954:8069': {'name': 'Wetter Auf der Höhe'},
+    'de:05954:8071': {'name': 'Wetter Lessingstr.'},
+    'de:05954:8073': {'name': 'Wetter Ostholz'},
+    'de:05954:8075': {'name': 'Wetter H.v.Fallersleben-Str.'},
+    'de:05954:8091': {'name': 'Wetter Osthausstr.'},
+    'de:05954:8096': {'name': 'Ennepetal dormakaba'},
+    'de:05954:8098': {'name': 'Ennepetal Feldstr.'},
+    'de:05954:8209': {'name': 'Ennepetal TEG'},
+    'de:05954:8210': {'name': 'Ennepetal Hasperbach Mühle'},
+    'de:05954:8211': {'name': 'Ennepetal Verneis'},
+    'de:05954:8212': {'name': 'Ennepetal Beuke'},
+    'de:05954:8213': {'name': 'Ennepetal Febi'},
+    'de:05954:8214': {'name': 'Ennepetal Voerde Bergstr.'},
+    'de:05954:8223': {'name': 'Breckerfeld Delle'},
+    'de:05954:8224': {'name': 'Breckerfeld Niedernheede'},
+    'de:05954:8225': {'name': 'Ennepetal Steherberg'},
+    'de:05954:8226': {'name': 'Ennepetal Kotthausstr.'},
+    'de:05954:8227': {'name': 'Ennepetal Münsterlandstr.'},
+    'de:05954:8228': {'name': 'Ennepetal Oberbauer'},
+    'de:05954:8229': {'name': 'Ennepetal Schule Oberbauer'},
+    'de:05954:8230': {'name': 'Ennepetal Kotthauser Heide'},
+    'de:05954:8231': {'name': 'Ennepetal Kerkenberg'},
+    'de:05954:8232': {'name': 'Ennepetal Bülbringer Str.'},
+    'de:05954:8233': {'name': 'Ennepetal Am Hoppe'},
+    'de:05954:8277': {'name': 'Wetter Steveling'},
+    'de:05954:8278': {'name': 'Wetter Gewerbegeb Schmandbruch'},
+    'de:05954:8279': {'name': 'Wetter Schmandbruch'},
+    'de:05954:8292': {'name': 'Breckerfeld Drehe'},
+    'de:05954:8297': {'name': 'Wetter Hartmannstr.'},
+    'de:05954:8311': {'name': 'Breckerfeld Wengeberg'},
+    'de:05954:8619': {'name': 'Breckerfeld Am Heider Kopf'},
+    'de:05954:8620': {'name': 'Breckerfeld Hattinger Str.'},
+    'de:05954:8755': {'name': 'Ennepetal Wilhelmstraße'},
+    'de:05954:8835': {'name': 'Breckerfeld Branten'},
+    'de:05954:8836': {'name': 'Breckerfeld Ehringhausen'},
+    'de:05954:8837': {'name': 'Breckerfeld Loh'},
+    'de:05954:8848': {'name': 'Breckerfeld Wengeberg-Kreuzung'},
+    'de:05954:8849': {'name': 'Wetter Volmarst. Sparkasse'},
+    'de:05954:8851': {'name': 'Breckerfeld Bonkampstr.'},
+    'de:05954:8852': {'name': 'Breckerfeld Bergstr.'},
+    'de:05954:8853': {'name': 'Breckerfeld Berliner Str.'},
+    'de:05954:8854': {'name': 'Breckerfeld Gencayer Str.'},
+    'de:05954:8855': {'name': 'Breckerfeld Wiesenstr.'},
+    //'de:05954:8977': {'name': 'Breckerfeld Landwehr'},
+    'de:05962:3548': {'name': 'Breckerfeld Landwehr'}, // EFA-Name Halver statt Breckerfeld
+    'de:05954:8982': {'name': 'Wetter Georg-Müller-Schule'},
+    //'de:05954:8839': {'name': 'Breckerfeld Glörparkplatz'}
+    'de:05962:3433': {'name': 'Breckerfeld Glör Parkplatz'}, // EFA-Name Schalksmühle statt Breckerfeld
+    'de:05962:3349': {'name': "Nachrodt Deierte"},
+    'de:05962:3351': {'name': "Nachrodt Deierter Weg"}
 }

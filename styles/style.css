@@ -141,6 +141,11 @@ html, body {
     }
 }
 
+.easy-button-button .button-state {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .transl:not(.stoptext):not(.stop):not(.animate-flicker) {
     opacity: 0.2 !important;
 }
@@ -149,11 +154,11 @@ html, body {
     fill: #bbb !important;
 }
 
-rect.transl.stop, path.transl.stop, g.transl.stop > rect, g.transl.stop > path {
+rect.transl.stop, path.transl.stop, circle.transl.stop, g.transl.stop > rect, g.transl.stop > circle:not(.bfback), g.transl.stop > path {
     stroke: #ccc !important;
 }
 
-g.transl.stop > circle {
+g.transl.stop > circle.bfback {
     fill: #bbb !important;
 }
 
@@ -275,12 +280,26 @@ g.transl.stop > g:not(.bficon) {
 
 .popup-line > a.leaflet-popup-close-button {
     font-size: xx-large;
-    padding: 13px 16px 0 0;
+    padding: 9px 13px 0 0;
     color: black;
+    user-select: none;
 }
 
 .popup-line a:not(.leaflet-popup-close-button) {
     cursor: pointer;
+}
+
+.popup-minimize-button {
+    margin-right: 45px;
+}
+.popup-line > a.leaflet-popup-close-button.popup-minimize-button {
+    padding-right: 0;
+}
+.popup-line.popup-minimized .leaflet-popup-content > div > :not(.popupheader) {
+    display: none !important;
+}
+.popup-line.popup-minimized > .leaflet-popup-content-wrapper > .leaflet-popup-content {
+    min-height: unset;
 }
 
 .bottom-flex {
@@ -365,8 +384,20 @@ g.transl.stop > g:not(.bficon) {
     display: block;
 }
 
+.leaflet-popup.popup-minimized .leaflet-popup-content .popupheader > span {
+    cursor: pointer !important;
+    user-select: none;
+}
 .popupheader {
     font-size: x-large;
+    margin-right: 65px;
+}
+.popupheader > span:first-child {
+    user-select: none;
+}
+.popupheader > span:first-child:not(:only-of-type):after {
+    content: '\A';
+    white-space: pre;
 }
 
 .deps-container-grid {

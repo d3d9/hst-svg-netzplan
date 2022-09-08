@@ -8,7 +8,7 @@ var svg_icon_nort = null;
 var svg_icon_p_r = null;
 var svg_icon_radbox = null;
 
-var svgElementBounds = [ [ 51.43, 7.827 ], [ 51.23, 7.382 ] ];
+var svgElementBounds = [ [ 51.474, 7.82 ], [ 51.23, 7.347 ] ];
 var popupPanPadding = L.point(45, 50);
 
 var useHash = true;
@@ -90,7 +90,9 @@ function createLineBlob(line, size) {
     rect.setAttributeNS(null, 'width', bWidth);
     rect.setAttributeNS(null, 'height', bHeight);
     rect.style.cssText = "opacity:1;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1";
-    rect.style.fill = line in hstNetzplanLines ? hstNetzplanLines[line].bg : "#000";
+    let lineData = hstNetzplanLines[line];
+    if (lineData?.use) lineData = hstNetzplanLines[lineData.use];
+    rect.style.fill = lineData?.bg ?? "#000";
     text = document.createElementNS(NS, 'text');
     text.setAttributeNS(null, 'x', bWidth / 2);
     text.setAttributeNS(null, 'y', bHeight / 2);
@@ -98,8 +100,11 @@ function createLineBlob(line, size) {
     text.setAttributeNS(null, 'height', bHeight);
     text.style.cssText = "dominant-baseline: central;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:1;font-family:'Fira Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1";
     text.style["font-size"] = size + "px";
-    text.style.fill = line in hstNetzplanLines ? hstNetzplanLines[line].fg : "#fff";
-    text.innerHTML = line;
+    text.style.fill = lineData?.fg ?? "#fff";
+    let blobText = line;
+    if (lineData?.override) blobText = lineData.override;
+    if (!blobText) blobText = "?";
+    text.innerHTML = blobText;
     g = document.createElementNS(NS, 'g');
     g.classList.add("lineblob-g");
     g.appendChild(rect);
@@ -188,9 +193,12 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                         let lineblob_g = lineblob.firstChild;
                         if (dep.linenum in hstNetzplanLines) {
                             lineblob_g.style.cursor = "pointer";
+                            let lineData = hstNetzplanLines[dep.linenum];
+                            let openLineNum = dep.linenum;
+                            if (lineData.use) openLineNum = lineData.use;
                             lineblob_g.addEventListener('click', function(cE) {
                                 //linesClicked(cE, [dep.linenum], stopid);
-                                linesClicked(null, [dep.linenum], stopid);
+                                linesClicked(null, [openLineNum], stopid);
                             });
                         }
                         _nr.appendChild(lineblob);
@@ -202,7 +210,7 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                         _ziel.classList.add("earlyterm");
                         _ziel.dataset.tooltip = "lt. Fahrplan bis " + dep.direction_planned;
                         _ziel.setAttribute("aria-haspopup", true);
-                        if (di == 0) _ziel.classList.add("tooltip-bottom");
+                        if (di == 0 && deplist.length > 1) _ziel.classList.add("tooltip-bottom");
                     }
                     if (dep.disp_countdown <= 60 || dep.realtime) {
                         let _d = new Date(dep.deptime_planned);
@@ -224,7 +232,7 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                         let _d = new Date(dep.deptime);
                         _abf.innerHTML = _d.getHours().toString().padStart(2, '0') + ":" + _d.getMinutes().toString().padStart(2, '0');
                     }
-                    if (di == 0 && _abf.dataset.tooltip) _abf.classList.add("tooltip-bottom");
+                    if (di == 0 && _abf.dataset.tooltip && deplist.length > 1) _abf.classList.add("tooltip-bottom");
 
                     if (dep.realtime) {
                         if (dep.delay <= 2) {
@@ -269,7 +277,9 @@ function updateDeps(popup, popupDiv, deps, stopid) {
                     elems[0].classList.add("center-in-deps");
                     elems[0].style["padding"] = "10px";
                     elems[0].style["font-size"] = "larger";
-                    elems[0].innerHTML = "Keine Abfahrten in den n&auml;chsten 24 Stunden";
+                    let noDataText = "Keine Abfahrten in den n&auml;chsten 24 Stunden";
+                    if (hstNetzplanStops[stopid]?.taxibus) noDataText = "F&uuml;r diese TaxiBus-Halte&shy;stelle k&ouml;nnen keine Ab&shy;fahrten dargestellt werden.<br/>Bitte nutzen Sie den PDF-Fahr&shy;plan der TaxiBus-Linie.";
+                    elems[0].innerHTML = noDataText;
                     updateDepListe(deps, elems);
                 }
             }
@@ -316,10 +326,15 @@ function stopClicked(e, stopid) {
     */
 
     popupDiv = document.createElement('div');
+    popupHeader = document.createElement('div');
     titleSpan = document.createElement('span');
-    titleSpan.innerHTML = "Haltestelleninformationen<br/>" + hstNetzplanStops[stopid].name;
-    titleSpan.classList.add("popupheader");
-    popupDiv.appendChild(titleSpan);
+    titleSpan.innerHTML = "Haltestelleninformationen";
+    stopSpan = document.createElement('span');
+    stopSpan.innerHTML = hstNetzplanStops[stopid].name;
+    popupHeader.classList.add("popupheader");
+    popupHeader.appendChild(titleSpan);
+    popupHeader.appendChild(stopSpan);
+    popupDiv.appendChild(popupHeader);
     popupDiv.insertAdjacentHTML('beforeend', "<hr style='margin-top: 0.1em; margin-bottom: 0.1em;' />");
 
     var deps = document.createElement('div');
@@ -440,7 +455,8 @@ function stopClicked(e, stopid) {
     }
 
     popup = new DraggablePopup({'autoPanPadding': popupPanPadding, 'className': "popup-line" + (_hasTip ? "" : " no-tip")}, svgLayer).setLatLng(_latLng).setContent(popupDiv).openOn(mymap);
-    noDrag(popup, titleSpan);
+    // noDrag(popup, titleSpan);
+    noDrag(popup, stopSpan);
     noDrag(popup, deps);
     noDrag(popup, linienSpan);
     noDrag(popup, linenrFlex);
@@ -487,7 +503,7 @@ function highlightStop(stopid) {
 function highlightLines(lines) {
     if (lines.some(l => !(l in stops_to_transl))) { console.warn("can't highlight/transl for:", lines); return; }
 
-    Array.prototype.forEach.call(svg.querySelectorAll('.route, .linetext, .lineblob, .infotext'), obj => {
+    Array.prototype.forEach.call(svg.querySelectorAll('.route, .linetext, .lineblob, .infotext, .poi'), obj => {
         _thatLines = obj.dataset.lineid.split(";");
         if (!(lines.some(l => _thatLines.includes(l)))) {
             obj.classList.add("transl");
@@ -506,15 +522,19 @@ function highlightLines(lines) {
         to_transl.forEach(obj => obj.classList.add("transl"));
         transl_cache[lines] = to_transl;
     }
+
+    Array.prototype.forEach.call(svg.querySelectorAll('.always-transl'), obj => {
+        obj.classList.add("transl");
+    });
 }
 
 function linesClicked(e, lines, stopid, prevlines) {
     var pContent = document.createElement('div');
 
-    let titleSpan = document.createElement('span');
-    titleSpan.innerHTML = "Linieninformationen";
-    titleSpan.classList.add("popupheader");
-    pContent.appendChild(titleSpan);
+    let popupHeader = document.createElement('div');
+    popupHeader.innerHTML = "<span>Linieninformationen</span>";
+    popupHeader.classList.add("popupheader");
+    pContent.appendChild(popupHeader);
     // pContent.insertAdjacentHTML('beforeend', "<br/>Linie" + (lines.length > 1 ? "n" : "") + ": ");
     pContent.insertAdjacentHTML('beforeend', "<hr style='margin-top: 0.1em; margin-bottom: 0.1em;' />");
 
@@ -543,19 +563,21 @@ function linesClicked(e, lines, stopid, prevlines) {
         linediv.appendChild(newBlob);
 
         if (l in hstNetzplanLines) {
-            if (!!hstNetzplanLines[l].info) {
+            let lineData = hstNetzplanLines[l];
+            if (lineData.use) lineData = hstNetzplanLines[lineData.use];
+            if (!!lineData.info) {
                 linediv.appendChild(document.createElement('br'));
                 let infoLink = document.createElement('a');
                 infoLink.innerHTML = "Informationen & Neuerungen";
-                infoLink.href = hstNetzplanLines[l].info;
+                infoLink.href = lineData.info;
                 infoLink.target = "_blank";
                 linediv.appendChild(infoLink);
             }
-            if (!!hstNetzplanLines[l].pdf) {
+            if (!!lineData.pdf) {
                 linediv.appendChild(document.createElement('br'));
                 let pdfLink = document.createElement('a');
                 pdfLink.innerHTML = "PDF-Fahrplan herunterladen";
-                pdfLink.href = hstNetzplanLines[l].pdf;
+                pdfLink.href = lineData.pdf;
                 pdfLink.target = "_blank";
                 linediv.appendChild(pdfLink);
             }
@@ -621,7 +643,7 @@ function linesClicked(e, lines, stopid, prevlines) {
         }
     }
     popup = new DraggablePopup({'autoPanPadding': popupPanPadding, 'className': "popup-line" + (_hasTip ? "" : " no-tip")}, svgLayer).setLatLng(_latLng).setContent(pContent).openOn(mymap);
-    noDrag(popup, titleSpan);
+    // noDrag(popup, popupHeader);
     noDrag(popup, lineinfoTop);
     for (var i = 0; i < bottomFlexButtons.children.length; i++) {
         noDrag(popup, bottomFlexButtons.children[i], false);
@@ -631,12 +653,13 @@ function linesClicked(e, lines, stopid, prevlines) {
     }
 }
 
-function deltaMoves(obj) {
+function deltaMoves(obj, preventDefault=false) {
     obj.addEventListener('mousedown', function(e) { _mm_prevc = {'x': e.pageX, 'y': e.pageY }; });
     obj.addEventListener('mouseup', function(e) { _mm_currc = {'x': e.pageX, 'y': e.pageY }; });
     obj.addEventListener('click', function(e) {
         if (Math.hypot((_mm_prevc.x-_mm_currc.x), (_mm_prevc.y-_mm_currc.y)) > _mm_maxdelta) {
             e.stopImmediatePropagation();
+            if (preventDefault) e.preventDefault();
         }
     });
 }
@@ -649,6 +672,11 @@ function prepareSvg(svg, NS) {
     let _stoptextLines = {};
     let _allStoptext = svg.querySelectorAll('.stoptext');
     let _allStop = svg.querySelectorAll('.stop');
+
+    Array.prototype.forEach.call(svg.querySelectorAll("a"), (a) => {
+        deltaMoves(a, true);
+        a.addEventListener("click", (e) => {e.stopPropagation();});
+    });
 
     $('.closepopup').each(function(i, obj) {
         deltaMoves(obj);
@@ -832,6 +860,39 @@ document.addEventListener('DOMContentLoaded', function() {
     }).addTo(mymap);
 
     mymap.on('popupopen', function(pE) {
+        let c = pE.popup._container;
+        let close = c?.querySelector(".leaflet-popup-close-button");
+        if (close) {
+            let minimize = close.cloneNode(true);
+            minimize.href = "#minimize";
+            minimize.classList.add("popup-minimize-button");
+            minimize.ariaLabel = "Minimize popup";
+            let span = minimize.querySelector("span");
+            span.innerHTML = "&ndash;";
+            let minimizeHandler = function(e) {
+                e?.preventDefault();
+                c.classList.add("no-tip");
+                let oldHeight = c.clientHeight + parseFloat(getComputedStyle(c).marginBottom);
+                c.classList.toggle("popup-minimized");
+                if (c.classList.contains("popup-minimized")) {
+                    c.style.marginBottom = oldHeight - c.clientHeight + "px";
+                    span.innerHTML = "+";
+                    let pHA = c.querySelectorAll(".leaflet-popup-content .popupheader > span");
+                    [...pHA].forEach((pH) => {
+                        let headerHandler = function() {
+                            minimizeHandler();
+                            pH.removeEventListener('click', headerHandler);
+                        }
+                        pH?.addEventListener('click', headerHandler);
+                    });
+                } else {
+                    c.style.marginBottom = "";
+                    span.innerHTML = "&ndash;";
+                }
+            };
+            minimize.addEventListener('click', minimizeHandler);
+            close.after(minimize);
+        }
         if (next_lines_open.length > 0) {
             if (useHash) window.location.hash = "line:" + next_lines_open.join(";");
 

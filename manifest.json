@@ -1,9 +1,9 @@
 {
   "name": "Interaktiver Netzplan HST",
   "short_name": "HST Netzplan",
-  "description": "Interaktiver Netzplan vom neuen Netz der HST",
+  "description": "Interaktiver Netzplan der HST",
   "lang": "de-DE",
-  "start_url": "https://www.strassenbahn-hagen.de/netzplan/",
+  "start_url": "https://www.hst-hagen.de/netzplan/",
   "scope": "/netzplan/",
   "display": "standalone",
   "theme_color": "#fff",

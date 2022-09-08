@@ -1,18 +1,20 @@
 function svgValidate() {
-    let ignoreClasses = ["transl", "leaflet-drag-target", "stop-backdrop-popup-open", "animate-flicker", "stoptext-popup-open", "fil0", "fil1", "deps-container-grid", "deps-headercell", "deps-nr", "deps-ziel", "deps-abfahrt", "lineblob-svg", "lineblob-g", "linenr-flex", "bottom-flex", "bottom-buttons", "bottom-icons", "lds-ring", "center-in-deps"];
+    let ignoreClasses = ["always-transl", "transl", "leaflet-drag-target", "stop-backdrop-popup-open", "animate-flicker", "stoptext-popup-open", "fil0", "fil1", "deps-container-grid", "deps-headercell", "deps-nr", "deps-ziel", "deps-abfahrt", "lineblob-svg", "lineblob-g", "linenr-flex", "bottom-flex", "bottom-buttons", "bottom-icons", "lds-ring", "center-in-deps"];
     let knownClasses = {
-        "stop": ["rect", "g", "path"],
+        "stop": ["rect", "g", "path", "circle"],
         "stoptext": ["text"],
         "route": ["path", "g"],
         "linetext": ["text", "g"],
         "lineblob": ["g"],
         "infotext": ["text", "path", "g", "rect"],
-        "bficon": ["g"]
+        "poi": ["g"],
+        "bfback": ["circle"],
+        "bficon": ["g"],
     };
     let ignoreTagnamesOnlyLineid = ["path"];
     let knownData = {
         "lineid": ["stoptext",
-                   "route", "linetext", "lineblob", "infotext"],
+                   "route", "linetext", "lineblob", "infotext", "poi"],
         "stopid": ["stoptext", "stop", /* noch nicht verwendet: */ "lineblob", "infotext"],
         "onlyLineid": ["stop"]
     };
@@ -173,4 +175,7 @@ function svgValidate() {
             }
         }
     }
+    
+    console.info("looking for sub-objects of stop groups that should be contained in a subgroup of the stop instead of being direct children (line end dots / arrows)");
+    $('g.stop > :not(g, rect, path#rect7848, .bfback, circle:only-of-type), g.stop > rect ~ circle:only-of-type').each(function(i, obj) {console.log(obj)});
 }
