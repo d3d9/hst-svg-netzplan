@@ -178,4 +178,10 @@ function svgValidate() {
     
     console.info("looking for sub-objects of stop groups that should be contained in a subgroup of the stop instead of being direct children (line end dots / arrows)");
     $('g.stop > :not(g, rect, path#rect7848, .bfback, circle:only-of-type), g.stop > rect ~ circle:only-of-type').each(function(i, obj) {console.log(obj)});
+
+    console.info("looking for linetext text content that does not match the data-lineid attribute value");
+    [...svg.querySelectorAll(".linetext")].forEach((le) => {
+        let text = le.textContent.trim().replace("*", "").replace(" ", ";");
+        if (le.dataset.lineid !== text) console.log("text: " + text, "data: " + le.dataset.lineid, le);
+    });
 }
