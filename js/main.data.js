@@ -35,6 +35,9 @@ var hstNetzplanLines = {
     , "521":    { "fg": "#fff", "bg": "#df0008",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/521",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/521.pdf" }
+    , "522":    { "fg": "#fff", "bg": "#e63758",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/522",
+                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x23/50-522-b-x23-1-HR.pdf" }
     , "524":    { "fg": "#fff", "bg": "#a36501",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/524",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/524.pdf" }
@@ -59,12 +62,18 @@ var hstNetzplanLines = {
     , "535":    { "fg": "#fff", "bg": "#e14c25",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/535",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/535.pdf" }
+    , "537":    { "fg": "#fff", "bg": "#006cb6",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/537",
+                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x23/50-537-B-x23-1-HR.pdf" }
     , "538":    { "fg": "#fff", "bg": "#006cb6",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/538",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/538.pdf" }
     , "539":    { "fg": "#fff", "bg": "#897300",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/539",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/539.pdf" }
+    , "540":    { "fg": "#fff", "bg": "#364a9c",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/540",
+                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x23/50-540-B-x23-1-HR.pdf" }
     , "541":    { "fg": "#fff", "bg": "#9c590f",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/541",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/541.pdf" }
@@ -74,12 +83,12 @@ var hstNetzplanLines = {
     , "543":    { "fg": "#fff", "bg": "#f49b00",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/543",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/543.pdf" }
-    , "SB71":   { "fg": "#fff", "bg": "#15b6b9",
-                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/sb71",
-                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/SB71.pdf" }
-    , "SB72":   { "fg": "#fff", "bg": "#0c919c",
-                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/sb72",
-                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/SB72.pdf" }
+    , "CE51":   { "fg": "#fff", "bg": "#c10004",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/ce51",
+                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x23/50-ce1-b-x23-1-HR.pdf" }
+    , "CE52":   { "fg": "#fff", "bg": "#e63758",
+                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/ce52",
+                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x23/50-ce2-b-x23-1-HR.pdf" }
     , "NE1":    { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#ff2a2a", */
                   "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne1",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/Nachtexpresse/NE1.pdf" }
@@ -117,10 +126,6 @@ var hstNetzplanLines = {
                   "phone": true,
                   "info": "https://www.hst-hagen.de/fahrplan/linien/taxibuslinien/t1",
                   "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x22/Taxibus/T1.pdf" }
-    , "T2":      { "fg": "#fff", "bg": "#261f5b",
-                  "phone": true,
-                  "info": "https://www.hst-hagen.de/fahrplan/linien/taxibuslinien/t2",
-                  "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x22/Taxibus/T2.pdf" }
     , "T4":      { "fg": "#fff", "bg": "#261f5b",
                   "phone": true,
                   "info": "https://www.hst-hagen.de/fahrplan/linien/taxibuslinien/t4",
@@ -356,6 +361,7 @@ var hstNetzplanStops = {
     'de:05914:2106': {'name': 'Hagen Freilichtmuseum'},
     'de:05914:2108': {'name': 'Hagen Krähnocken'},
     'de:05914:2109': {'name': 'Hagen Felsenstr.'},
+    'de:05914:2110': {'name': 'Hagen Niederstr.'},
     'de:05914:2111': {'name': 'Hagen Elisabethstr.'},
     'de:05914:2112': {'name': 'Hagen Boele Amtshaus'},
     'de:05914:2113': {'name': 'Hagen Külpestr.'},
@@ -561,7 +567,7 @@ var hstNetzplanStops = {
     'de:05914:2368': {'name': 'Hagen Volkenborn'},
     'de:05914:2369': {'name': 'Hagen Krupp'},
     'de:05914:2370': {'name': 'Hagen Haardtstr.'},
-    'de:05914:2371': {'name': 'Hagen Giebel'},
+    'de:05914:2371': {'name': 'Hagen Walzwerk 1810'},
     'de:05914:2372': {'name': 'Hagen Nimmertal'},
     'de:05914:2373': {'name': 'Hagen Nahmerbach'},
     'de:05914:2374': {'name': 'Hagen Lahmen Hasen'},
@@ -628,7 +634,7 @@ var hstNetzplanStops = {
     'de:05914:2457': {'name': 'Hagen Hückinghauser Weg'},
     'de:05914:2458': {'name': 'Hagen Am Schellbrink'},
     'de:05914:2461': {'name': 'Hagen Einhausstr.'},
-    'de:05914:2462': {'name': 'Hagen Hoesch'},
+    'de:05914:2462': {'name': 'Hagen Waelzholz Kabel'},
     'de:05914:2463': {'name': 'Hagen Uhde'},
     'de:05914:2464': {'name': 'Hagen Profilstr.'},
     'de:05914:2466': {'name': 'Hagen Im Löhken'},
@@ -672,7 +678,7 @@ var hstNetzplanStops = {
     'de:05914:2511': {'name': 'Hagen Hag. Entsorgungsbetr.'},
     'de:05914:2515': {'name': 'Hagen Krähnockenstraße'},
     'de:05914:2516': {'name': 'Hagen Volkshochschule'},
-    'de:05914:2517': {'name': 'Hagen C. D. Wälzholz'},
+    'de:05914:2517': {'name': 'Hagen Waelzholz Fley'},
     'de:05914:2518': {'name': 'Hagen Waldfriedhof'},
     'de:05914:2520': {'name': 'Hagen BasseDruck'},
     'de:05914:2521': {'name': 'Hagen ARCADEON'},
@@ -689,7 +695,7 @@ var hstNetzplanStops = {
     'de:05914:2543': {'name': 'Hagen Am Waldwege'},
     'de:05914:2545': {'name': 'Hagen Am Weitblick'},
     'de:05914:2547': {'name': 'Hagen Hubertusstr.'},
-    'de:05914:2549': {'name': 'Hagen Feldmühlenstr.'},
+    'de:05914:2549': {'name': 'Hagen Waelzholz Halden'},
     'de:05914:2550': {'name': 'Hagen Rubensstr.'},
     'de:05914:2551': {'name': 'Hagen Dahlenkampstr.'},
     'de:05914:2557': {'name': 'Hagen Neue Str.'},
@@ -743,15 +749,12 @@ var hstNetzplanStops = {
     'de:05914:2319': {'name': 'Hagen An der Wallburg'},
     'de:05914:2413': {'name': 'Hagen Grundschule Volmetal'},
     // 'de:05914:2571': {'name': 'Hagen Asker Str.'}, // Umleitung 542 (alt)
-    'de:05914:2486': {'name': 'Hagen Lindhaardt', 'taxibus': true},
-    'de:05914:2487': {'name': 'Hagen Auf der Lindhaardt', 'taxibus': true},
-    'de:05914:2527': {'name': 'Hagen In der Oberheide', 'taxibus': true},
-    'de:05914:2748': {'name': 'Hagen Ahmer Weg', 'taxibus': true},
-    'de:05914:2747': {'name': 'Hagen Piepenstockstr.', 'taxibus': true},
-    'de:05914:2760': {'name': 'Hagen Sonnenberg III', 'taxibus': true},
-    'de:05914:2746': {'name': 'Hagen Sonnenberg II', 'taxibus': true},
-    'de:05914:2745': {'name': 'Hagen Sonnenberg I', 'taxibus': true},
-    'de:05914:2759': {'name': 'Hagen Oege', 'taxibus': true},
+    'de:05914:2748': {'name': 'Hagen Ahmer Weg'},
+    'de:05914:2747': {'name': 'Hagen Piepenstockstr.'},
+    'de:05914:2760': {'name': 'Hagen Sonnenberg III'},
+    'de:05914:2746': {'name': 'Hagen Sonnenberg II'},
+    'de:05914:2745': {'name': 'Hagen Sonnenberg I'},
+    'de:05914:2759': {'name': 'Hagen Oege'},
     'de:05914:2567': {'name': 'Hagen Kratzkopf', 'taxibus': true},
     'de:05914:2459': {'name': 'Hagen Ambrocker Weg', 'taxibus': true},
     'de:05914:2460': {'name': 'Hagen Klinik Ambrock', 'taxibus': true},
