@@ -184,11 +184,4 @@ function svgValidate() {
         let text = le.textContent.trim().replace("*", "").replace(" ", ";");
         if (le.dataset.lineid !== text) console.log("text: " + text, "data: " + le.dataset.lineid, le);
     });
-
-    console.info("looking for stoptext/route with white fill/stroke");
-    [...svg.querySelectorAll(".stoptext, .route")].forEach((le) => {
-        let style = window.getComputedStyle(le);
-        let white = style.fill == "rgb(255, 255, 255)" || style.stroke == "rgb(255, 255, 255)";
-        if (white && style.strokeDasharray == "none") { console.log(le); le.classList.add("check"); };
-    });
 }

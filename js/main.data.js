@@ -249,6 +249,8 @@ var hstNetzplanLines = {
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RE16.pdf" }
     , "RE17":   { "fg": "#fff", "bg": "#f4731f",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RE17.pdf" }
+    , "RE34":   { "fg": "#fff", "bg": "#f4731f",
+                  "pdf": "" }
     , "RB40":   { "fg": "#fff", "bg": "#40c1f3",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/RB40.pdf" }
     , "RB52":   { "fg": "#fff", "bg": "#40c1f3",
