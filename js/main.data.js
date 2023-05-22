@@ -14,7 +14,7 @@ var hstNetzplanLines = {
     , "514":    { "fg": "#fff", "bg": "#f49b00",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/514",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/514.pdf" }
-    , "515":    { "fg": "#fff", "bg": "#c10004",
+    , "515":    { "fg": "#fff", "bg": "#567b3e",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/515",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/515.pdf" }
     , "516":    { "fg": "#fff", "bg": "#7eaf49",
@@ -29,16 +29,13 @@ var hstNetzplanLines = {
     , "519":    { "fg": "#fff", "bg": "#007bc1",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/519",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/519.pdf" }
-    , "520":    { "fg": "#fff", "bg": "#e63758",
-                  "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/520",
-                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/520.pdf" }
     , "521":    { "fg": "#fff", "bg": "#df0008",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/521",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/521.pdf" }
     , "522":    { "fg": "#fff", "bg": "#e63758",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/522",
                   "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x23/50-522-b-x23-1-HR.pdf" }
-    , "524":    { "fg": "#fff", "bg": "#a36501",
+    , "524":    { "fg": "#fff", "bg": "#7fceef",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/524",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/524.pdf" }
     , "525":    { "fg": "#fff", "bg": "#df0008",
@@ -47,16 +44,16 @@ var hstNetzplanLines = {
     , "527":    { "fg": "#fff", "bg": "#7c277d",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/527",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/527.pdf" }
-    , "528":    { "fg": "#fff", "bg": "#1784c1",
+    , "528":    { "fg": "#fff", "bg": "#7fceef",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/528",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/528.pdf" }
     , "530":    { "fg": "#fff", "bg": "#e60253",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/530",
-                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/530.pdf" }
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/530.pdf" }/*
     , "532":    { "fg": "#fff", "bg": "#364a9c",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/532",
-                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/532.pdf" }
-    , "534":    { "fg": "#fff", "bg": "#567b3e",
+                  "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/532.pdf" }*/
+    , "534":    { "fg": "#fff", "bg": "#7c277d",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/534",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/534.pdf" }
     , "535":    { "fg": "#fff", "bg": "#e14c25",
@@ -74,7 +71,7 @@ var hstNetzplanLines = {
     , "540":    { "fg": "#fff", "bg": "#364a9c",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/540",
                   "pdf": "https://www.hst-hagen.de/fileadmin//user_upload/Linien/x23/50-540-B-x23-1-HR.pdf" }
-    , "541":    { "fg": "#fff", "bg": "#9c590f",
+    , "541":    { "fg": "#fff", "bg": "#e63758",
                   "info": "https://www.hst-hagen.de/fahrplan/linien/buslinien/541",
                   "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x22/541.pdf" }
     , "542":    { "fg": "#fff", "bg": "#71c837",
@@ -894,8 +891,8 @@ var hstNetzplanStops = {
     'de:05954:8853': {'name': 'Breckerfeld Berliner Str.'},
     'de:05954:8854': {'name': 'Breckerfeld Gencayer Str.'},
     'de:05954:8855': {'name': 'Breckerfeld Wiesenstr.'},
-    //'de:05954:8977': {'name': 'Breckerfeld Landwehr'},
-    'de:05962:3548': {'name': 'Breckerfeld Landwehr'}, // EFA-Name Halver statt Breckerfeld
+    'de:05954:8977': {'name': 'Breckerfeld Landwehr'},
+    // 'de:05962:3548': {'name': 'Breckerfeld Landwehr'}, // alte IFOPT oder so
     'de:05954:8982': {'name': 'Wetter Georg-Müller-Schule'},
     //'de:05954:8839': {'name': 'Breckerfeld Glörparkplatz'}
     'de:05962:3433': {'name': 'Breckerfeld Glör Parkplatz'}, // EFA-Name Schalksmühle statt Breckerfeld
