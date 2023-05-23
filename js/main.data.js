@@ -885,8 +885,8 @@ var hstNetzplanStops = {
     'de:05954:8853': {'name': 'Breckerfeld Berliner Str.'},
     'de:05954:8854': {'name': 'Breckerfeld Gencayer Str.'},
     'de:05954:8855': {'name': 'Breckerfeld Wiesenstr.'},
-    //'de:05954:8977': {'name': 'Breckerfeld Landwehr'},
-    'de:05962:3548': {'name': 'Halver Landwehr'}, // EFA-Name Halver statt Breckerfeld; (H) lag EFA seitig in falscher Kommune
+    'de:05954:8977': {'name': 'Breckerfeld Landwehr'},
+    //'de:05962:3548': {'name': 'Halver Landwehr'}, // EFA-Name Halver statt Breckerfeld; (H) lag EFA seitig in falscher Kommune
     'de:05954:8982': {'name': 'Wetter Georg-Müller-Schule'},
     //'de:05954:8839': {'name': 'Breckerfeld Glörparkplatz'}
     'de:05962:3433': {'name': 'Breckerfeld Glör Parkplatz'}, // EFA-Name Schalksmühle statt Breckerfeld
