@@ -732,8 +732,8 @@ function prepareSvg(svg, NS) {
                         }
                         else {
                             // Normal weiter machen.
-                            // Damit Linien wie bei Loxbaum oder Schwenke ausgeblendet sind (else)
-                            // , aber so etwas wie Gwbpk. Kückelh. ganz normal behandelt wird.
+                            // Damit Linien wie bei Loxbaum oder Schwenke ausgeblendet sind (if)
+                            // , aber so etwas wie Gwbpk. Kückelh. ganz normal behandelt wird (else).
                         }
                     }
                     if (!_stoptextLines[obj.dataset.stopid].includes(line)) {
