@@ -725,14 +725,15 @@ function prepareSvg(svg, NS) {
                         return;
                     }
                     if (obj.tagName.toUpperCase() == "PATH") {
-                        if ($('.stop[data-stopid="'+obj.dataset.stopid+'"]').not('.stop[data-only-lineid]').length == 2) {
-                            // Normal weiter machen.
-                            // Damit Linien wie bei Loxbaum oder Schwenke ausgeblendet sind (else)
-                            // , aber so etwas wie Gwbpk. Kückelh. ganz normal behandelt wird.
-                        }
-                        else {
+                        let result = $('.stop[data-stopid="'+obj.dataset.stopid+'"]').not('.stop[data-only-lineid]');
+                        if (result.length > 0 && result.get().map((e) => e.tagName).every(tagName => tagName.toUpperCase() === 'PATH') ) {
                             stops_to_transl[line].add(obj);
                             return;
+                        }
+                        else {
+                            // Normal weiter machen.
+                            // Damit Linien wie bei Loxbaum oder Schwenke ausgeblendet sind (if)
+                            // , aber so etwas wie Gwbpk. Kückelh. ganz normal behandelt wird (else).
                         }
                     }
                     if (!_stoptextLines[obj.dataset.stopid].includes(line)) {
