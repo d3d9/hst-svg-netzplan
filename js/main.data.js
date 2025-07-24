@@ -113,11 +113,11 @@ var hstNetzplanLines = {
   , "NE32":   { "fg": "#ffcc00", "bg": "#000", /* "fg": "#fff", "bg": "#364a9c", */
                 "info": "https://www.hst-hagen.de/fahrplan/linien/nachtexpress-linien/ne32",
                 "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x23/Nachtexpresse/NE32.pdf" }
-  , "T1":      { "fg": "#fff", "bg": "#261f5b",
+  , "TB1":      { "fg": "#fff", "bg": "#261f5b",
                 "phone": true,
                 "info": "https://www.hst-hagen.de/fahrplan/linien/taxibuslinien/t1",
                 "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x23/Taxibus/T1.pdf" }
-  , "T4":      { "fg": "#fff", "bg": "#261f5b",
+  , "TB4":      { "fg": "#fff", "bg": "#261f5b",
                 "phone": true,
                 "info": "https://www.hst-hagen.de/fahrplan/linien/taxibuslinien/t4",
                 "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x23/Taxibus/T4.pdf" }
@@ -285,7 +285,7 @@ var hstNetzplanStops = {
     'de:05914:2032': {'name': 'Hagen Akku Hawker'},
     'de:05914:2033': {'name': 'Hagen Wehringhauser Str.'},
     'de:05914:2035': {'name': 'Hagen Isenbergstr.'},
-    'de:05914:2036': {'name': 'Hagen Henrichsiepen'},
+    // 'de:05914:2036': {'name': 'Hagen Henrichsiepen'},
     'de:05914:2037': {'name': 'Hagen Haspe Zentrum', 'umgebung': 'https://www.hst-hagen.de/fileadmin/user_upload/Haltestellenskizzen/HUP-Haspe-x23.pdf'},
     'de:05914:2038': {'name': 'Hagen Niederhaspe'},
     'de:05914:2039': {'name': 'Hagen Kölner Str.'},
@@ -371,7 +371,7 @@ var hstNetzplanStops = {
     'de:05914:2125': {'name': 'Hagen Berchum'},
     'de:05914:2126': {'name': 'Hagen Linnufer'},
     'de:05914:2127': {'name': 'Hagen Gemarkenweg'},
-    'de:05914:2128': {'name': 'Hagen Gosmann'},
+    // 'de:05914:2128': {'name': 'Hagen Gosmann'},
     'de:05914:2129': {'name': 'Hagen Kahlenberg'},
     'de:05914:2130': {'name': 'Hagen Steinberg'},
     'de:05914:2131': {'name': 'Hagen Grüll'},
@@ -748,9 +748,9 @@ var hstNetzplanStops = {
     'de:05914:2746': {'name': 'Hagen Sonnenberg II'},
     'de:05914:2745': {'name': 'Hagen Sonnenberg I'},
     'de:05914:2759': {'name': 'Hagen Oege'},
-    'de:05914:2567': {'name': 'Hagen Kratzkopf', 'taxibus': true},
-    'de:05914:2459': {'name': 'Hagen Ambrocker Weg', 'taxibus': true},
-    'de:05914:2460': {'name': 'Hagen Klinik Ambrock', 'taxibus': true},
+    'de:05914:2567': {'name': 'Hagen Kratzkopf'}, // , 'taxibus': true
+    'de:05914:2459': {'name': 'Hagen Ambrocker Weg'}, // , 'taxibus': true
+    'de:05914:2460': {'name': 'Hagen Klinik Ambrock'}, // , 'taxibus': true
     'de:05954:2251': {'name': 'Herdecke Koenenstr.'},
     'de:05954:2253': {'name': 'Herdecke Mitte'},
     'de:05954:2254': {'name': 'Herdecke Kirche'},
