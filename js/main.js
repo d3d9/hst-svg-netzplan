@@ -824,7 +824,7 @@ document.addEventListener('DOMContentLoaded', function() {
                      // + 'Bei Klick auf "Linien hervorheben" werden alle Linien, die diese Haltestelle bedienen, hervorgehoben, so erkennen Sie schnell die dortigen Direktverbindungen.<br/>'
                      // + '[Sie können sich ebenfalls einen Aushang wie von der echten Haltestelle gewohnt im PDF-Format ausdrucken.] Bei großen Haltestellen finden Sie hier auch die Haltestellenumgebungspläne im PDF-Format. Ebenfalls sind im Fenster die Liniennummern anklickbar (siehe Abschnitt hierunter).<br/>[Screenshot Linie angeklickt (einzeln)]<br/>'
                      + '<hr/>Auf <a target="_blank" href="https://www.hst-hagen.de/fahrplan/netzplaene-als-download">dieser</a> Seite k&ouml;nnen Sie sich die Netzpl&auml;ne im PDF-Format herunterladen.<br/>'
-                     + '<br/><hr/><small>Programmierung: <a target="_blank" href="https://d3d9.xyz/">Kevin Arutyunyan</a> | <a target="_blank" href="https://github.com/d3d9/hst-svg-netzplan">Projektseite</a></small>'
+                     + '<br/><hr/><small>Programmierung: <a target="_blank" href="https://d3d9.xyz/">Kiba Arutyunyan</a> | <a target="_blank" href="https://github.com/d3d9/hst-svg-netzplan">Projektseite</a></small>'
                      + '<br/><small>Netzplan: Simon Schreckenberg | <a target="_blank" href="https://www.hst-hagen.de/">Hagener Straßenbahn AG</a></small><br/><br/>'
                 ),
                 style: null
@@ -962,3 +962,4 @@ document.addEventListener('DOMContentLoaded', function() {
     mymap.fitBounds(svgElementBounds);
 
 }, false);
+
