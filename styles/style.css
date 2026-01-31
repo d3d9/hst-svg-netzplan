@@ -166,7 +166,7 @@ g.transl.stop > g > path {
     fill: #bbb;
 }
 
-g.transl.stop > g:not(.bficon) {
+g.transl.stop > g/*:not(.bficon)*/ {
     opacity: 0.2 !important;
 }
 

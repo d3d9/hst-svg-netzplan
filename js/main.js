@@ -8,7 +8,9 @@ var svg_icon_nort = null;
 var svg_icon_p_r = null;
 var svg_icon_radbox = null;
 
-var svgElementBounds = [ [ 51.474, 7.82 ], [ 51.23, 7.347 ] ];
+// var svgElementBounds = [ [ 51.474, 7.82 ], [ 51.23, 7.347 ] ];
+// neuer Aspect Ratio 2026
+var svgElementBounds = [ [ 51.42, 7.7 ], [ 51.287, 7.4 ] ];
 var popupPanPadding = L.point(45, 50);
 
 var useHash = true;
@@ -798,10 +800,10 @@ document.addEventListener('DOMContentLoaded', function() {
         autoToggleDisplay: true,
         toggleDisplay: true,
         thumbnailBounds: svgLayer.getBounds(),
-        width: 180,
-        height: 130,
+        width: 230,
+        height: 160,
         //centerFixed: svgLayer.getBounds().getCenter(),
-        zoomLevelFixed: 9
+        zoomLevelFixed: 10
         //zoomLevelOffset: -5
     });
     miniMap.addTo(mymap);
