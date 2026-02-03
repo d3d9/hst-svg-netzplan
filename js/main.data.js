@@ -244,7 +244,7 @@ var hstNetzplanLines = {
   , "RE17":   { "fg": "#fff", "bg": "#f4731f",
                 "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x25/SPNV/RE17.pdf" }
   , "RE34":   { "fg": "#fff", "bg": "#f4731f",
-                "pdf": "" }
+                "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x25/SPNV/RE34.pdf" }
   , "RB40":   { "fg": "#fff", "bg": "#40c1f3",
                 "pdf": "https://www.hst-hagen.de/fileadmin/user_upload/Linien/x25/SPNV/RB40.pdf" }
   , "RB52":   { "fg": "#fff", "bg": "#40c1f3",
@@ -897,4 +897,5 @@ var hstNetzplanStops = {
     'de:05962:3349': {'name': "Nachrodt Deierte"},
     'de:05962:3351': {'name': "Nachrodt Deierter Weg"}
 }
+
 
